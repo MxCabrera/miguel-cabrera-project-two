@@ -6,3 +6,84 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+
+
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif; */
+
+
+
+* {
+    color: black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.home-header-wrapper {
+    max-width: 1600px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.home-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding: 2rem 0;
+
+}
+nav {
+    width: 100% ;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.flex li a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.flex li:hover a {
+    color: gray;
+}
+
+.first-nav {
+    flex: 1 0 20%;
+    min-width: 6.2rem;
+}
+
+.home-logo {
+    text-align: center;
+    padding-left: 3rem;
+    flex: 2.5 0 40%;
+}
+
+.home-header-h1 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.home-header-icons {
+    font-size: 1.2rem;
+}
+
+.suitcase {
+    margin-left: 1.3rem;
+}
+
+.header-image {
+    height: 100vh;
+    background-image: url(../sunshine-assets/home-1.jpeg);
+    background-size: cover;
+}

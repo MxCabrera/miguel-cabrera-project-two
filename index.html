@@ -12,25 +12,29 @@
 </head>
 <body>
     <header>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="https://www.google.ca">about</a></li>
-                    <li><a href="https://www.google.ca">reserve</a></li>
-                </ul>
-            </nav>
-            <h1>Sunshine</h1>
-            <div>
+        <div class="home-header-wrapper">
+            <div class="home-header-container">
                 <nav>
-                    <ul>
-                        <li><a href="./pages/blog.html">blog</a></li>
-                        <li><a href="./pages/contact.html">contact</a></li>
+                    <ul class="flex">
+                        <div class="first-nav flex">
+                            <li><a href="">home</a></li>
+                            <li><a href="https://www.google.ca">about</a></li>
+                            <li><a href="https://www.google.ca">reserve</a></li>
+                        </div>
+                        <li class="home-logo">
+                            <h1 class="home-header-h1" aria-hidden="true">Sunshine</h1>
+                        </li>
+                        <div class="first-nav flex">
+                            <li><a href="./pages/blog.html">blog</a></li>
+                            <li><a href="./pages/contact.html">contact</a></li>
+                            <div class="home-header-icons">
+                                <a href=""><i class="fas fa-search"></i></a>
+                                <a class="suitcase" href=""><i class="fas fa-suitcase"></i></a>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
             </div>
-            <a href=""><i class="fas fa-search"></i></a>
-            <a href=""><i class="fas fa-suitcase"></i></a>
         </div>
         <div class="header-image"></div>
     </header>
