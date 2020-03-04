@@ -36,6 +36,7 @@ html {
     position: fixed;
     width: 100%;
     background-color: white;
+    z-index: 1000;
 }
 
 .home-header-container {
@@ -104,6 +105,138 @@ nav {
     background-position: center;
 }
 
+
+/* main  */
+
+main {
+    background-color: #ededed;
+}
+
+.wrapper-main {
+    max-width: 1600px;
+    width: 54%;
+    margin: 0 auto;
+}
+
+.wrapper-main h4{
+font-family: 'Poppins', sans-serif;
+}
+
+.wrapper-main h4 {
+    text-align: center;
+    padding: 14rem 0 7rem 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    color: #999999;
+    font-weight: 700;
+}
+
+.home-main-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 21rem;
+}
+
+.girl-smiling {
+    flex: 1 0 37%;
+    border: 1.1rem solid white;
+    margin: 0 2rem;
+}
+
+.home-section-1-info {
+    flex: 1 0 47%;
+    margin-left: 2.6rem;
+    padding-top: 2rem;
+    border-top : 1px solid #999;
+}
+
+.home-section-1-info h2 {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 3.8rem;
+}
+
+.home-section-1-info p {
+    color: #999;
+    line-height: 2.5rem;
+    font-family: 'Poppins', serif;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}
+
+.home-section-1-info span {
+    font-weight: 700;
+}
+.resort-logo {
+    width: 25%;
+    position: absolute; 
+    bottom: -9rem;
+    left: -7.5rem;
+}
+
+.main-image1 {
+    flex: 1 0 30%;
+    background-image: url(../sunshine-assets/home-3.jpeg);
+    background-size: cover;
+}
+
+.home-section-2-flex {
+    display: flex;
+}
+
+.home-section-2-flex-column {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 77%;
+}
+
+.home-section-2-flex-column h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.home-section-2-flex-column h4,
+.home-section-2-flex-column p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-section-2-flex-column p {
+    font-size: 1rem;
+    color: #999;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+.home-section-2-info {
+    background-color: #fff;
+    flex: 1 0 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 15rem 5rem 11rem 5rem;
+}
+
+.home-main-amenities {
+    width: 32%;
+    margin: 0 3rem 3rem 0;
+}
+
+.home-main-amenities:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+.home-main-amenities i {
+    font-size: 2.5rem;
+    flex: 0 0 18%;
+}
+
+/* main ends  */
 
 
 /* footer  */
