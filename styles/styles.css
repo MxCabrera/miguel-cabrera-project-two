@@ -331,6 +331,13 @@ nav {
   background-position: center;
 }
 
+.header-image-blog {
+  height: 80vh;
+  background-image: url(../sunshine-assets/blog-1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
 footer {
   background-color: #000;
   font-family: 'Poppins', sans-serif;
@@ -760,4 +767,10 @@ main {
   font-weight: 700;
   color: #000;
   font-family: 'Playfair Display', sans-serif;
+}
+
+.blog-page-absolute {
+  background-color: white;
+  width: 65%;
+  margin: 0 auto;
 }
