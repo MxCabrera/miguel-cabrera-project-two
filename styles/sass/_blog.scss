@@ -2,5 +2,62 @@
     background-color: white;
     width: 65%;
     margin: 0 auto;
+    padding: 7rem 3rem 2rem 3rem;
 }
 
+.blog-page-main-info h2{
+    font-size: 3rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.blog-page-main-info p {
+    font-size: 1rem;
+    color: $primary-color;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blog-page-main-info p a {
+    color: $secondary-color;
+} 
+.alex-profile-pic {
+    width: 60%;
+}
+
+.alex-profile-pic div {
+    text-align: left;
+}
+
+.alex-profile-pic div h4 {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.alex-profile-pic img {
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.blog-page-paragraphs {
+    border-top: 2px solid #999;
+    margin-top: 2rem;
+}
+
+.blog-page-paragraphs p {
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+// .blog-container 
+
+.related-post {
+    width: calc ((100% / 3) - 20px)
+}
+
+.related-post img {
+    width: 100%;
+}
