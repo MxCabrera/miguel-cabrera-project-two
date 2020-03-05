@@ -1,0 +1,248 @@
+main {
+    background-color: #ededed;
+}
+
+.wrapper-main {
+    max-width: 1600px;
+    width: 54%;
+    margin: 0 auto;
+}
+
+.wrapper-main h4{
+    padding: 14rem 0 7rem 0;
+}
+
+.wrapper-main h4,
+.home-section-3-title {
+        font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 18rem 0 9rem 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    color: #999999;
+    font-weight: 700;
+}
+
+.home-main-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 21rem;
+}
+
+.girl-smiling {
+    flex: 1 0 34%;
+    border: 1.1rem solid white;
+    margin: 0 3rem;
+}
+
+.home-section-1-info::before {
+    content: '';
+    width: 15%;
+    border-top: 2px solid #999;
+    display:block;
+    padding-bottom: 2.5rem;
+}
+
+.home-section-1-info {
+    flex: 1 0 43%;
+    margin-left: 2.6rem;
+}
+
+.home-section-1-info h2 {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 3.8rem;
+}
+
+.home-section-1-info p {
+    color: #999;
+    line-height: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.home-section-1-info span {
+    font-weight: 700;
+}
+.resort-logo {
+    width: 25%;
+    position: absolute; 
+    bottom: -9rem;
+    left: -7.5rem;
+}
+
+.main-image1 {
+    flex: 1 0 30%;
+    background-image: url(../sunshine-assets/home-3.jpeg);
+    background-size: cover;
+}
+
+.home-section-2-flex {
+    display: flex;
+}
+
+.home-section-2-flex-column {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 77%;
+}
+
+.home-section-2-flex-column h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.home-section-2-flex-column h4,
+.home-section-2-flex-column p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-section-2-flex-column p {
+    font-size: 1.15rem;
+    color: #999;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+.home-section-2-info {
+    background-color: #fff;
+    flex: 1 0 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 16rem 5rem 12rem 5rem;
+}
+
+.home-main-amenities {
+    width: 33%;
+    margin: 0 3rem 3rem 0;
+    padding: 0.5rem;
+}
+
+.home-main-amenities:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+.home-main-amenities i {
+    font-size: 2.7rem;
+    flex: 0 0 18%;
+}
+
+/* next section  */
+
+.pattern-bg {
+    background-image: url(../sunshine-assets/pattern.png)
+}
+
+.wrapper-main-section-3 {
+    max-width: 1600px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.wrapper-main-section-3 .home-section-3-title {
+    padding: 5rem 0 5rem 0;
+}
+.home-section-3-box {
+    padding: 6rem 0rem;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 5rem;
+    text-align: center;
+    position: relative; 
+    z-index: 1;
+}
+
+.testimonial:hover {
+    box-shadow: 0.5rem 0.5rem 1rem #000;
+}
+
+.testimonial h2 {
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5rem; 
+}
+
+.testimonial p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    width: 83%;
+    line-height: 3rem;
+    margin: auto;
+}
+
+.home-section-3-stars {
+    margin: 3.5rem 0;
+}
+
+.home-section-3-stars i {
+    font-size: 1.8rem;
+    color:#F6AB09;
+}
+
+.home-chevron-right i,
+.home-chevron-left i {
+    font-size: 3.3rem;
+    color: #000;
+}
+
+.home-chevron-right i:hover,
+.home-chevron-left i:hover {
+    color: #999;
+}
+
+.home-chevron-right {
+    position: absolute; 
+    right: -8rem;
+    bottom: 25rem;
+}
+
+.home-chevron-left {
+    position: absolute;
+    left: -8rem;
+    bottom: 25rem;
+}
+
+.testimonial .adam-levine {
+    font-family: 'Poppins', serif;
+    color: #999;
+    font-size: 1.2rem;
+
+}
+
+.testimonial .adam-levine span {
+    color: #000;
+}
+
+// next section 
+
+.gallery {
+    font-size: 5.5rem;
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+}
+
+.home-gallery-images {
+    margin-top: 4rem;
+    padding-bottom: 17rem;
+}
+
+.home-gallery-images img {
+    width: calc((100% / 3) - 8px);
+    margin-top: 1rem;
+    margin-right: 0.6rem;
+}
+
+// .home-gallery-images:nth-child(3n + 3) {
+//     margin-right: 0px;
+//     }
