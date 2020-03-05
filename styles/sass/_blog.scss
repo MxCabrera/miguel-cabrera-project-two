@@ -1,8 +1,13 @@
+.wrapper-blog { 
+}
+
 .blog-page-absolute {
     background-color: white;
     width: 65%;
     margin: 0 auto;
     padding: 7rem 3rem 2rem 3rem;
+    position: relative;
+    top: -8rem;
 }
 
 .blog-page-main-info h2{
@@ -120,7 +125,7 @@
 .related-post {
     width: calc ((100% / 3) - 2%);
     border-top: 1px solid #ccc;
-    padding-top: 4rem;
+    margin-top: 4rem;
 }
 
 .related-post:hover {
@@ -216,4 +221,77 @@
     font-family: 'Poppins', serif;
     line-height: 1.5;
     color: #EDEDED;
+}
+
+.message {
+    padding: 1rem 1.5rem;
+}
+
+.message h5 {
+    font-size: 1.2rem;
+}
+
+.message p {
+    font-size: 1rem;
+    padding-top: 0.7rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.message-reply {
+    color: #A4F1DC;
+    text-transform: capitalize;
+}
+
+
+
+.blog-forms h2 {
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.blog-forms form {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+.blog-forms .forms-your-comment {
+    border-bottom: none;
+    margin-top: 2rem;
+}
+.blog-forms input[type="text"] {
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 30%;
+    padding-bottom: 1rem;
+}
+
+.blog-forms input[type="email"] {
+    background-color: white; 
+    border-bottom: 1px solid #ccc;
+    width: 30%;
+    padding-bottom: 1rem;
+}
+
+input {
+    margin-right: 1.9rem;
+}
+
+.blog-button-overline {
+    border-top: 1px solid #ccc;
+}
+
+.blog-button-overline .blog-button {
+    padding: 1.5rem 3.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #84A016;
+    text-transform: uppercase;
+    border-radius: 0.1rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    border: none;
 }
