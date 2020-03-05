@@ -227,6 +227,10 @@ textarea {
   transition: all 0.25s linear;
 }
 
+header {
+  background-color: #ededed;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -325,17 +329,28 @@ nav {
 }
 
 .header-image {
+  max-width: 1800px;
   height: 100vh;
   background-image: url(../sunshine-assets/home-1.jpeg);
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
 }
 
 .header-image-blog {
+  max-width: 1800px;
+  margin: 0 auto;
   height: 80vh;
   background-image: url(../sunshine-assets/blog-1.jpeg);
   background-size: cover;
   background-position: center;
+}
+
+.header-image-contact {
+  max-width: 1800px;
+  margin: 0 auto;
+  height: 70rem;
+  background-image: url(../sunshine-assets/contact-1.jpeg);
 }
 
 footer {
@@ -518,6 +533,11 @@ main {
   background-size: cover;
 }
 
+.home-section-2-container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .home-section-2-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +613,8 @@ main {
 /* next section  */
 .pattern-bg {
   background-image: url(../sunshine-assets/pattern.png);
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .wrapper-main-section-3 {
@@ -698,6 +720,8 @@ main {
 
 .home-section-4 {
   background-color: white;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .main-image-2 {
@@ -783,8 +807,9 @@ main {
   margin: 0 auto;
 }
 
-.blog-page-main-info p {
-  font-size: 1rem;
+.blog-trip-advisor {
+  font-size: 1.1rem;
+  font-family: 'Poppins', serif;
   color: #000000;
   text-align: center;
   margin-top: 2rem;
@@ -793,10 +818,11 @@ main {
 
 .blog-page-main-info p a {
   color: #999999;
+  text-decoration: none;
 }
 
 .alex-profile-pic {
-  width: 60%;
+  width: 50%;
 }
 
 .alex-profile-pic div {
@@ -809,21 +835,177 @@ main {
 }
 
 .alex-profile-pic img {
+  width: 15%;
   border-radius: 50%;
   border: 1px solid white;
 }
 
+.alex-profile {
+  margin-left: 1.5rem;
+}
+
+.alex-profile h4 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.alex-profile p {
+  font-family: 'Poppins', serif;
+  color: #999;
+}
+
+.blog-side-info {
+  width: 15%;
+}
+
+.blog-side-info h4 {
+  font-size: 1.5rem;
+  margin-top: 0.6rem;
+}
+
+.blog-side-info p {
+  font-family: 'Poppins', serif;
+  color: #999;
+}
+
 .blog-page-paragraphs {
-  border-top: 2px solid #999;
-  margin-top: 2rem;
+  border-top: 1px solid #CCCCCC;
+  margin-top: 3rem;
 }
 
 .blog-page-paragraphs p {
   font-size: 1.2rem;
   text-align: left;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  font-family: 'Poppins', serif;
+}
+
+.blog-bold-p {
+  margin-top: 3rem;
+}
+
+.blog-page-paragraphs p:not(.blog-bold-p) {
+  font-weight: 400;
+  margin-top: 2rem;
+  color: #ccc;
+}
+
+.share-icons {
+  width: 20%;
+  color: #ccc;
+  margin: 5rem 0 7rem 0;
+}
+
+.share-icons i {
+  width: 12%;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.share-icons i:hover {
+  color: #A4F1DC;
+}
+
+.share-icons span {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.related-post {
+  width: calc 31.33333%;
+  border-top: 1px solid #ccc;
+  padding-top: 4rem;
+}
+
+.related-post:hover {
+  -webkit-box-shadow: 1px 1px 15px #000;
+          box-shadow: 1px 1px 15px #000;
+}
+
+.related-post:hover .related-post-info p {
+  text-decoration: underline;
+}
+
+.related-post-container h3 {
+  font-size: 2.6rem;
+  padding-bottom: 2rem;
 }
 
 .related-post img {
-  width: 100%;
+  width: 96%;
+}
+
+.related-post-info {
+  width: 85%;
+  margin: 0 auto;
+  padding: 1.4rem 0;
+}
+
+.date {
+  font-size: 1.2rem;
+  font-family: 'Poppins', serif;
+  color: #999;
+}
+
+.related-post-info p {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.related-post-info .blog-continue {
+  font-family: 'Poppins', serif;
+  font-size: 1.1rem;
+}
+
+.comment {
+  margin-top: 3rem;
+}
+
+.comment h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-comments img {
+  width: 6%;
+}
+
+.single-comment {
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+}
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #EDEDED;
+}
+
+.tip-left {
+  top: 10px;
+  left: -25px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.text-comment .body {
+  position: relative;
+  max-width: 800px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: #EDEDED;
+  border: 5px solid #EDEDED;
+}
+
+.body .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-family: 'Poppins', serif;
+  line-height: 1.5;
+  color: #EDEDED;
 }

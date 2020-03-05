@@ -82,6 +82,11 @@ main {
     background-size: cover;
 }
 
+.home-section-2-container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
 .home-section-2-flex {
     display: flex;
 }
@@ -138,7 +143,9 @@ main {
 /* next section  */
 
 .pattern-bg {
-    background-image: url(../sunshine-assets/pattern.png)
+    background-image: url(../sunshine-assets/pattern.png);
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .wrapper-main-section-3 {
@@ -243,14 +250,13 @@ main {
     margin-right: 0.6rem;
 }
 
-// .home-gallery-images:nth-child(3n + 3) {
-//     margin-right: 0px;
-//     }
 
 // next section 
 
 .home-section-4 {
     background-color: white;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .main-image-2 {
