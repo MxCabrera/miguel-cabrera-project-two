@@ -1,10 +1,18 @@
 .wrapper-blog { 
+    max-width: 1800px;
+}
+
+.wrapper-blog,
+.blog-page-absolute,
+.blog-page-main-info h2,
+.related-post-info {
+    margin: 0 auto;
+
 }
 
 .blog-page-absolute {
     background-color: white;
     width: 65%;
-    margin: 0 auto;
     padding: 7rem 3rem 2rem 3rem;
     position: relative;
     top: -8rem;
@@ -14,20 +22,19 @@
     font-size: 3rem;
     text-align: center;
     width: 60%;
-    margin: 0 auto;
 }
 
 .blog-trip-advisor {
     font-size: 1.1rem;
     font-family: 'Poppins', serif;
-    color: $primary-color;
+    color: $color-one;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .blog-page-main-info p a {
-    color: $secondary-color;
+    color: $color-two;
     text-decoration: none;
 } 
 
@@ -152,7 +159,6 @@
 
 .related-post-info {
     width: 85%; 
-    margin: 0 auto;
     padding: 1.4rem 0;
 }
 
@@ -214,7 +220,7 @@
     position: relative;
     max-width: 800px;
     height: auto;
-    margin: 20px 10px;
+    margin: 1.25px 0.62rem;
     padding: 5px;
     background-color: rgb(245, 243, 243);
     border: 5px solid rgb(245, 243, 243);
@@ -303,4 +309,8 @@ input {
     margin-top: 5rem;
     margin-bottom: 3rem;
     border: none;
+}
+
+.blog-button:focus {
+    border: 1px dotted $color-eight ;
 }

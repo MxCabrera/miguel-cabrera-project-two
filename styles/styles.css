@@ -222,7 +222,7 @@ textarea {
 }
 
 * {
-  color: black;
+  color: #000000;
   -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
@@ -286,6 +286,10 @@ nav {
 .flex-header li a {
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.flex-header li:focus a {
+  color: #800080;
 }
 
 .flex li a {
@@ -356,6 +360,10 @@ nav {
   background-position: center;
 }
 
+.cart {
+  color: #A4F1DC;
+}
+
 footer {
   background-color: #000;
   font-family: 'Poppins', sans-serif;
@@ -364,6 +372,10 @@ footer {
 .footer-flex {
   padding-top: 4.5rem;
   padding-bottom: 2.8rem;
+}
+
+.footer-flex li:focus a {
+  color: #800080;
 }
 
 .footer-flex li:hover a {
@@ -384,6 +396,10 @@ footer {
 .form-footer i,
 .footer-social-media i {
   color: #ededed;
+}
+
+.footer-social-media:focus i {
+  color: #EDEDED;
 }
 
 .footer-pages {
@@ -796,10 +812,20 @@ main {
   font-family: 'Playfair Display', sans-serif;
 }
 
+.wrapper-blog {
+  max-width: 1800px;
+}
+
+.wrapper-blog,
+.blog-page-absolute,
+.blog-page-main-info h2,
+.related-post-info {
+  margin: 0 auto;
+}
+
 .blog-page-absolute {
   background-color: white;
   width: 65%;
-  margin: 0 auto;
   padding: 7rem 3rem 2rem 3rem;
   position: relative;
   top: -8rem;
@@ -809,7 +835,6 @@ main {
   font-size: 3rem;
   text-align: center;
   width: 60%;
-  margin: 0 auto;
 }
 
 .blog-trip-advisor {
@@ -948,7 +973,6 @@ main {
 
 .related-post-info {
   width: 85%;
-  margin: 0 auto;
   padding: 1.4rem 0;
 }
 
@@ -1006,7 +1030,7 @@ main {
   position: relative;
   max-width: 800px;
   height: auto;
-  margin: 20px 10px;
+  margin: 1.25px 0.62rem;
   padding: 5px;
   background-color: #f5f3f3;
   border: 5px solid #f5f3f3;
@@ -1096,18 +1120,26 @@ input {
   border: none;
 }
 
+.blog-button:focus {
+  border: 1px dotted #800080;
+}
+
 .contact-image-main {
   height: 70vh;
   background-image: url(../sunshine-assets/contact-2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.contact-image-main,
+.wrapper-contact {
   max-width: 1800px;
+  margin: 0 auto;
 }
 
 .wrapper-contact {
   width: 60%;
-  margin: 0 auto;
 }
 
 .wrapper-contact > h2 {
@@ -1116,10 +1148,25 @@ input {
 }
 
 .wrapper-contact > p {
-  font-size: 1rem;
-  color: #999;
   width: 50%;
   line-height: 2rem;
+}
+
+.wrapper-contact > p,
+.contact-options p,
+.contact-touch p {
+  color: #999999;
+}
+
+.wrapper-contact > p,
+.contact-options p {
+  font-size: 1rem;
+}
+
+.wrapper-contact > p,
+.contact-options p,
+.contact-touch p,
+.contact-button button {
   font-family: 'Poppins', serif;
 }
 
@@ -1139,14 +1186,15 @@ input {
 
 .contact-options h4 {
   font-size: 1.6rem;
-  color: #000;
   margin-top: 1.1rem;
 }
 
+.contact-options h4,
+.contact-button button {
+  color: #000000;
+}
+
 .contact-options p {
-  color: #999;
-  font-size: 1rem;
-  font-family: 'Poppins', serif;
   line-height: 1.5rem;
   margin-top: 0.6rem;
 }
@@ -1160,8 +1208,6 @@ input {
 }
 
 .contact-touch p {
-  font-family: 'Poppins', serif;
-  color: #999;
   margin-top: 2rem;
   margin-bottom: 7rem;
 }
@@ -1176,10 +1222,12 @@ input {
   border: none;
   border-bottom: 1px solid #000;
   padding: 0.7rem 0;
-  color: #000;
   font-size: 1.2rem;
   margin: 4rem 0 3rem 0;
   text-transform: uppercase;
-  font-family: 'Poppins', serif;
   font-weight: 700;
+}
+
+.contact-button button:focus {
+  border: 1px dotted #800080;
 }

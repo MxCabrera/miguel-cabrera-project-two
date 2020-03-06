@@ -1,5 +1,5 @@
 * {
-    color: black;
+    color: $color-one;
     transition: all 0.25s linear;
 }
 
@@ -46,12 +46,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    // margin-top: 1rem;
 }
 
 .flex-header li a {
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.flex-header li:focus a {
+    color: $color-eight;
 }
 
 .flex li a {
@@ -117,4 +120,9 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.cart {
+    color: #A4F1DC;
+
 }
