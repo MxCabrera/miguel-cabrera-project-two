@@ -11,10 +11,6 @@ html {
     font-size: 62.5%;
 }
 
-// .wrapper-body {
-//     max-width: 1600px;
-//     margin: 0 auto;
-// }
 
 .wrapper-header,
 .wrapper-footer {
@@ -116,6 +112,9 @@ nav {
 .header-image-contact {
     max-width: 1800px;
     margin: 0 auto;
-    height: 70rem;
+    height: 65vh;
     background-image: url(../sunshine-assets/contact-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

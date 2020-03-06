@@ -45,44 +45,52 @@
     </header>
 
     <main>
-        <div class="wrapper">
+        <div class="wrapper-contact">
             <h2>Contact details</h2>
             <p>Design cute expedition, excursion fun modern website clean website traveling travelblogger traveling theme. Travel fun simple design, simple fun design.</p>
-            <div>
-                <i class="fas fa-mobile-alt"></i>
-                <h4>Phone</h4>
-                <p>Phone 01: (0091) 8547 632521
-                    Phone 02:  (084) 965 4788</p>
+            <div class="flex contact-option-container">
+                <div class="contact-options">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Phone</h4>
+                    <p>Phone 01: (0091) 8547 632521</p>
+                    <p> Phone 02:  (084) 965 4788</p>
+                </div>
+                <div class="contact-options"> 
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Address</h4>
+                    <p>123 King Str, 4th Floor, Utral Hosue Building,
+                        Honolulu, Hawaii</p>
+                </div>
+                <div class="contact-options contact-email">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>support@sunshine.com</p>
+                    <p>hello@sunshine.com</p>
+                </div>
             </div>
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <h4>Address</h4>
-                <p>123 King Str, 4th Floor, Utral Hosue Building,
-                    Honolulu, Hawaii</p>
-            </div>
-            <div>
-                <i class="fas fa-envelope"></i>
-                <h4>Email</h4>
-                <p>support@sunshine.com</p>
-                <p>hello@sunshine.com</p>
-            </div>
-            <div>
+            <div class="contact-touch">
                 <h2>Get in touch with us</h2>
                 <p>Traveling travelblogger traveling theme. Travel fun simple design, simple fun.</p>
             </div>
-            <form action="">
-                <label for="name">Enter your Name</label>
-                <input type="text" name="name" id="name" placeholder="enter your name..">
-                <label for="email">Enter your Email</label>
-                <input type="email" name="email" id="email" placeholder="enter your email" value="youremail@domain.com">
-                <label for="message">Here goes your message</label>
-                <input type="text" name="message" id="message" placeholder="Here goes your message">
-                <button>send message</button>
-            </form>
+            <div class="blog-forms">
+                <form action="">
+                    <label class="visuallyHidden" for="name">Enter your name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name.." required>
+                    <label class="visuallyHidden" for="email">your email</label>
+                    <input type="email" name="email" id="email" value="youremail@domain.com" required>
+                    <label class="visuallyHidden" for="subject">subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject (optional)">
+                    <label class="visuallyHidden" for="comment">Comment</label>
+                    <input class="forms-your-comment" type="text" name="comment" id="comment" placeholder="Here goes your message">
+                </form>
+                <div class="contact-button">
+                    <button>send message</button>
+                </div>
+            </div>
         </div>
         <div class="contact-image-main"></div>
     </main>
-
+    
     <footer>
         <div class="wrapper-footer">
             <div class="footer-flex flex">

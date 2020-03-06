@@ -126,6 +126,7 @@
     width: calc ((100% / 3) - 2%);
     border-top: 1px solid #ccc;
     margin-top: 4rem;
+    margin-right: 2rem;
 }
 
 .related-post:hover {
@@ -141,8 +142,12 @@
     padding-bottom: 2rem;
 }
 
+.related-post-info-container {
+    width: 100%;
+}
+
 .related-post img {
-    width: 96%;
+    width: 100%;
 }
 
 .related-post-info {
@@ -193,7 +198,7 @@
     height: 0px; 
     position: absolute;
     background: transparent;
-    border: 10px solid #EDEDED;
+    border: 10px solid rgb(245, 243, 243);
 }
 
 .tip-left {
@@ -211,8 +216,8 @@
     height: auto;
     margin: 20px 10px;
     padding: 5px;
-    background-color: #EDEDED;
-    border: 5px solid #EDEDED;
+    background-color: rgb(245, 243, 243);
+    border: 5px solid rgb(245, 243, 243);
 }
 
 .body .message {
@@ -220,7 +225,7 @@
     border-radius: 3px;
     font-family: 'Poppins', serif;
     line-height: 1.5;
-    color: #EDEDED;
+    color: rgb(245, 243, 243);
 }
 
 .message {
@@ -234,14 +239,18 @@
 .message p {
     font-size: 1rem;
     padding-top: 0.7rem;
-    color: #ccc;
+    color: #999;
     margin-bottom: 1rem;
 }
 
-.message-reply {
+.message-box span {
+    color: #ccc;
+}
+.message-box .message-reply {
     color: #A4F1DC;
     text-transform: capitalize;
 }
+
 
 
 
