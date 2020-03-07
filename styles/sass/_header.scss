@@ -1,10 +1,14 @@
 * {
-    color: $color-one;
     transition: all 0.25s linear;
 }
 
+*,
+.shopping {
+    color: $color-one;
+}
+
 header {
-    background-color: #ededed;
+    background-color: $color-three;
 }
 
 html {
@@ -16,36 +20,37 @@ html {
 .wrapper-footer {
     max-width: 1600px;
     width: 60%;
-    margin: 0 auto;
-}
-
-.wrapper-header {
-    background-color: white;
 }
 
 .fixed {
     position: fixed;
-    width: 100%;
-    background-color: white;
     z-index: 1000;
 }
 
+.wrapper-header,
+.fixed {
+    background-color: $color-nine;
+}
+
 .home-header-container {
-    display: flex;
-    justify-content: space-between;
     align-content: flex-end;
     padding: 2rem 0;
 
 }
-nav {
+nav,
+.fixed {
     width: 100% ;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.home-header-container,
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .flex-header li a {
@@ -61,11 +66,10 @@ nav {
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
 }
 
 .flex-header li:hover a {
-    color: gray;
+    color: $color-two;
 }
 
 .first-nav {
@@ -85,7 +89,7 @@ nav {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
-
+.flex li a,
 .home-header-icons {
     font-size: 1.2rem;
 }
@@ -95,44 +99,51 @@ nav {
 }
 
 .header-image {
-    max-width: 1800px;
     height: 100vh;
     background-image: url(../sunshine-assets/home-1.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
 }
 
 .header-image-blog {
-    max-width: 1800px;
-    margin: 0 auto;
     height: 80vh;
     background-image: url(../sunshine-assets/blog-1.jpeg);
-    background-size: cover;
-    background-position: center;
 }
 
 .header-image-contact {
-    max-width: 1800px;
-    margin: 0 auto;
     height: 65vh;
     background-image: url(../sunshine-assets/contact-1.jpeg);
+}
+
+.header-image,
+.header-image-blog,
+.header-image-contact {
+    max-width: 1800px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.wrapper-header,
+.wrapper-footer,
+.header-image,
+.header-image-blog,
+.header-image-contact {
+    margin: 0 auto;
+}
+
+
 .cart {
-    color: #A4F1DC;
-    position:relative;
+    color: $color-five;
     top: -5px;
     right: -33px;
 }
 
 .shopping {
-    color: $color-one;
-    position: relative; 
     top: -10px;
     right: -5px;
     font-size: 0.9rem;
+}
+
+.cart,
+.shopping {
+    position: relative;
 }

@@ -1,10 +1,22 @@
 main {
-    background-color: #ededed;
+    background-color: $color-three;
 }
 
 .wrapper-main {
-    max-width: 1600px;
     width: 54%;
+}
+
+.wrapper-main,
+.home-section-2-container, 
+.wrapper-main-section-3 {
+    max-width: 1600px;
+}
+
+.wrapper-main,
+.home-section-2-container, 
+.wrapper-main-section-3,
+.pattern-bg,
+.home-section-4 {
     margin: 0 auto;
 }
 
@@ -14,35 +26,87 @@ main {
 
 .wrapper-main h4,
 .home-section-3-title {
-        font-family: 'Poppins', sans-serif;
-    text-align: center;
     padding: 18rem 0 9rem 0;
     font-size: 1.3rem;
-    text-transform: uppercase;
     letter-spacing: 0.6rem;
-    color: #999999;
+}
+
+.wrapper-main h4,
+.home-section-3-title,
+.home-section-1-info p,
+.home-section-2-flex-column p,
+.home-chevron-right i:hover,
+.home-chevron-left i:hover,
+.testimonial .adam-levine,
+.home-section-4-info h4,
+.home-section-4-info span {
+    color: $color-two;
+} 
+
+.wrapper-main h4,
+.home-section-3-title,
+.testimonial,
+.gallery {
+    text-align: center;
+}
+
+.wrapper-main h4,
+.home-section-3-title,
+.home-section-2-flex-column h4,
+.home-section-4-info h4 {
+    text-transform: uppercase;
+}
+
+.wrapper-main h4,
+.home-section-3-title,
+.home-section-1-info span,
+.home-section-2-flex-column h4,
+.home-section-4-info h2,
+.home-section-4-info .section-4-email  {
     font-weight: 700;
 }
 
+.wrapper-main h4,
+.home-section-3-title,
+.home-section-1-info p,
+.home-section-2-flex-column h4,
+.home-section-2-flex-column p,
+.testimonial .adam-levine,
+.home-section-4-info h4,
+.home-section-4-info p  {
+    font-family: 'Poppins', sans-serif;    
+}
+
 .home-main-flex {
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative;
     z-index: 1;
     margin-bottom: 21rem;
 }
 
+.home-main-flex,
+.testimonial {
+    position: relative;
+}
+
+.home-main-flex,
+.home-section-2-flex,
+.home-section-2-flex-column,
+.home-section-4-info,
+.home-section-2-info {
+    display: flex;
+}
+
 .girl-smiling {
     flex: 1 0 34%;
-    border: 1.1rem solid white;
+    border: 1.1rem solid $color-nine;
     margin: 0 3rem;
 }
 
 .home-section-1-info::before {
     content: '';
     width: 15%;
-    border-top: 2px solid #999;
+    border-top: 2px solid $color-two;
     display:block;
     padding-bottom: 2.5rem;
 }
@@ -54,72 +118,81 @@ main {
 
 .home-section-1-info h2 {
     font-size: 3.5rem;
-    font-family: 'Playfair Display', serif;
     line-height: 3.8rem;
 }
 
+.home-section-1-info h2,
+.testimonial h2, 
+.testimonial p,
+.gallery,
+.home-section-4-info h2,
+.home-section-4-info h3,
+.home-section-4-info .section-4-email {
+    font-family: 'Playfair Display', serif;
+}
+
 .home-section-1-info p {
-    color: #999;
     line-height: 2.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
     margin-top: 3rem;
 }
 
-.home-section-1-info span {
-    font-weight: 700;
+.home-section-1-info p,
+.testimonial .adam-levine,
+.home-section-4-info p {
+    font-size: 1.2rem;
 }
+
 .resort-logo {
     width: 25%;
-    position: absolute; 
     bottom: -9rem;
     left: -7.5rem;
 }
 
-.main-image1 {
+.resort-logo,
+.home-chevron-right,
+.home-chevron-left {
+    position: absolute;
+}
+
+.main-image-1 {
     flex: 1 0 30%;
     background-image: url(../sunshine-assets/home-3.jpeg);
-    background-size: cover;
 }
 
-.home-section-2-container {
+
+.home-section-2-container,
+.pattern-bg,
+.home-section-4  {
     max-width: 1800px;
-    margin: 0 auto;
 }
 
-.home-section-2-flex {
-    display: flex;
-}
 
 .home-section-2-flex-column {
-    display: flex;
-    flex-direction: column;
     flex: 0 0 77%;
+}
+
+.home-section-2-flex-column,
+.home-section-4-info {
+    flex-direction: column;
 }
 
 .home-section-2-flex-column h4 {
     font-size: 1.3rem;
-    font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 0.15rem;
-}
-
-.home-section-2-flex-column h4,
-.home-section-2-flex-column p {
-    font-family: 'Poppins', sans-serif;
 }
 
 .home-section-2-flex-column p {
     font-size: 1.15rem;
-    color: #999;
-    margin-top: 1rem;
     line-height: 2rem;
 }
 
+.home-section-2-flex-column p, 
+.home-gallery-images img {
+    margin-top: 1rem;
+}
+
 .home-section-2-info {
-    background-color: #fff;
     flex: 1 0 60%;
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     padding: 16rem 5rem 12rem 5rem;
@@ -132,7 +205,7 @@ main {
 }
 
 .home-main-amenities:hover {
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px $color-one;
 }
 
 .home-main-amenities i {
@@ -144,14 +217,11 @@ main {
 
 .pattern-bg {
     background-image: url(../sunshine-assets/pattern.png);
-    max-width: 1800px;
-    margin: 0 auto;
 }
 
-.wrapper-main-section-3 {
-    max-width: 1600px;
+.wrapper-main-section-3,
+.home-section-4-info p {
     width: 60%;
-    margin: 0 auto;
 }
 
 .wrapper-main-section-3 .home-section-3-title {
@@ -162,30 +232,33 @@ main {
 }
 
 .testimonial {
-    background-color: white;
     padding: 5rem;
-    text-align: center;
-    position: relative; 
     z-index: 1;
 }
 
 .testimonial:hover {
-    box-shadow: 0.5rem 0.5rem 1rem #000;
+    box-shadow: 0.5rem 0.5rem 1rem $color-one;
 }
 
 .testimonial h2 {
     font-size: 5rem;
-    font-family: 'Playfair Display', serif;
     margin-bottom: 5rem; 
 }
 
 .testimonial p {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: 1.7rem;
     width: 83%;
     line-height: 3rem;
     margin: auto;
+}
+
+.testimonial p,
+.home-section-3-stars i {
+    font-size: 1.7rem;
+}
+
+.testimonial p,
+.home-section-4-info span {
+    font-weight: 400;
 }
 
 .home-section-3-stars {
@@ -193,50 +266,35 @@ main {
 }
 
 .home-section-3-stars i {
-    font-size: 1.8rem;
-    color:#F6AB09;
+    color: $color-six;
 }
 
 .home-chevron-right i,
 .home-chevron-left i {
     font-size: 3.3rem;
-    color: #000;
 }
 
-.home-chevron-right i:hover,
-.home-chevron-left i:hover {
-    color: #999;
+.home-chevron-right i,
+.home-chevron-left i,
+.testimonial .adam-levine span,
+.home-section-4-info .section-4-email {
+    color: $color-one;
 }
 
 .home-chevron-right {
-    position: absolute; 
     right: -8rem;
     bottom: 25rem;
 }
 
 .home-chevron-left {
-    position: absolute;
     left: -8rem;
     bottom: 25rem;
-}
-
-.testimonial .adam-levine {
-    font-family: 'Poppins', serif;
-    color: #999;
-    font-size: 1.2rem;
-
-}
-
-.testimonial .adam-levine span {
-    color: #000;
 }
 
 // next section 
 
 .gallery {
     font-size: 5.5rem;
-    font-family: 'Playfair Display', sans-serif;
-    text-align: center;
 }
 
 .home-gallery-images {
@@ -246,22 +304,26 @@ main {
 
 .home-gallery-images img {
     width: calc((100% / 3) - 8px);
-    margin-top: 1rem;
     margin-right: 0.6rem;
 }
 
 
 // next section 
 
+.home-section-2-info,
+.testimonial,
 .home-section-4 {
-    background-color: white;
-    max-width: 1800px;
-    margin: 0 auto;
+    background-color: $color-nine;
 }
+
+.main-image-1,
+.main-image-2 {
+    background-size: cover;
+}
+
 
 .main-image-2 {
     background-image: url(../sunshine-assets/home-10.jpeg);
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 64rem;
@@ -271,51 +333,28 @@ main {
 .home-section-4-info {
     margin: 10rem;
     flex: 1 1 30%;
-    display: flex;
-    flex-direction: column;
-    // background-color: white;
 }
 
 .home-section-4-info h4 {
-    font-family: 'Poppins', serif;
     font-size: 1rem;
     letter-spacing: 0.7rem;
-    color: #999;
-    text-transform: uppercase;
     margin-bottom: 2.4rem;
 }
 
 .home-section-4-info h2 {
     font-size: 4.5rem;
-    font-weight: 700;
-    font-family: 'Playfair Display', sans-serif;
     margin-bottom: 10rem;
 }
 
 .home-section-4-info h3{
     font-size: 2rem;
-    font-family:'Playfair Display', sans-serif;
-}
-
-.home-section-4-info span {
-    color: #999;
-    font-weight: 400;
 }
 
 .home-section-4-info p {
-    font-family: 'Poppins', serif;
-    font-size: 1.2rem;
     margin: 1.3rem 0 2.4rem 0;
-    width: 60%;
     line-height: 2rem;
 }
 
 .home-section-4-info .home-phone-number {
     font-size: 2.8rem;
-}
-
-.home-section-4-info .section-4-email {
-    font-weight: 700;
-    color: #000;
-    font-family: 'Playfair Display', sans-serif;
 }
