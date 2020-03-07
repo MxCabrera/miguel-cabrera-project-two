@@ -362,10 +362,21 @@ nav {
 
 .cart {
   color: #A4F1DC;
+  position: relative;
+  top: -5px;
+  right: -33px;
+}
+
+.shopping {
+  color: #000000;
+  position: relative;
+  top: -10px;
+  right: -5px;
+  font-size: 0.9rem;
 }
 
 footer {
-  background-color: #000;
+  background-color: #000000;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -835,6 +846,8 @@ main {
   font-size: 3rem;
   text-align: center;
   width: 60%;
+  margin-bottom: 3rem;
+  font-weight: 700;
 }
 
 .blog-trip-advisor {
@@ -842,8 +855,7 @@ main {
   font-family: 'Poppins', serif;
   color: #000000;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .blog-page-main-info p a {
@@ -885,39 +897,37 @@ main {
 
 .blog-side-info {
   width: 15%;
+  margin-top: 1.8rem;
 }
 
 .blog-side-info h4 {
   font-size: 1.5rem;
-  margin-top: 0.6rem;
+  font-weight: 700;
 }
 
 .blog-side-info p {
   font-family: 'Poppins', serif;
   color: #999;
+  margin-top: 1rem;
 }
 
-.blog-page-paragraphs {
+.blog-page-paragraphs,
+.related-post,
+.single-comment,
+.blog-button-overline {
   border-top: 1px solid #CCCCCC;
-  margin-top: 3rem;
 }
 
 .blog-page-paragraphs p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: left;
   line-height: 2rem;
   margin-bottom: 1.2rem;
-  font-weight: 700;
   font-family: 'Poppins', serif;
-}
-
-.blog-bold-p {
-  margin-top: 3rem;
 }
 
 .blog-page-paragraphs p:not(.blog-bold-p) {
   font-weight: 400;
-  margin-top: 2rem;
   color: #ccc;
 }
 
@@ -942,9 +952,12 @@ main {
   margin-right: 2rem;
 }
 
+.blog-container {
+  border-top: 1px solid #ccc;
+}
+
 .related-post {
   width: calc 31.33333%;
-  border-top: 1px solid #ccc;
   margin-top: 4rem;
   margin-right: 2rem;
 }
@@ -961,6 +974,7 @@ main {
 .related-post-container h3 {
   font-size: 2.6rem;
   padding-bottom: 2rem;
+  font-weight: 700;
 }
 
 .related-post-info-container {
@@ -972,7 +986,7 @@ main {
 }
 
 .related-post-info {
-  width: 85%;
+  width: 86%;
   padding: 1.4rem 0;
 }
 
@@ -980,6 +994,7 @@ main {
   font-size: 1.2rem;
   font-family: 'Poppins', serif;
   color: #999;
+  margin-bottom: 1rem;
 }
 
 .related-post-info p {
@@ -990,15 +1005,18 @@ main {
 .related-post-info .blog-continue {
   font-family: 'Poppins', serif;
   font-size: 1.1rem;
+  margin-top: 2.1rem;
+  font-weight: 700;
 }
 
 .comment {
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 
 .comment h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 .blog-comments img {
@@ -1006,7 +1024,6 @@ main {
 }
 
 .single-comment {
-  border-top: 1px solid #ccc;
   padding-top: 2rem;
 }
 
@@ -1015,7 +1032,7 @@ main {
   height: 0px;
   position: absolute;
   background: transparent;
-  border: 10px solid #f5f3f3;
+  border: 10px solid #f3f3f3;
 }
 
 .tip-left {
@@ -1026,14 +1043,18 @@ main {
   border-bottom-color: transparent;
 }
 
+.text-comment {
+  margin-top: 2rem;
+}
+
 .text-comment .body {
   position: relative;
   max-width: 800px;
   height: auto;
   margin: 1.25px 0.62rem;
   padding: 5px;
-  background-color: #f5f3f3;
-  border: 5px solid #f5f3f3;
+  background-color: #f3f3f3;
+  border: 5px solid #f3f3f3;
 }
 
 .body .message {
@@ -1041,7 +1062,7 @@ main {
   border-radius: 3px;
   font-family: 'Poppins', serif;
   line-height: 1.5;
-  color: #f5f3f3;
+  color: white;
 }
 
 .message {
@@ -1069,32 +1090,44 @@ main {
 }
 
 .blog-forms h2 {
-  margin-top: 5rem;
+  margin-top: 8rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #ccc;
 }
 
 .blog-forms form {
+  margin-bottom: 7rem;
+}
+
+.blog-page-paragraphs,
+.blog-bold-p,
+.blog-forms form {
   margin-top: 3rem;
-  margin-bottom: 10rem;
+}
+
+.blog-trip-advisor,
+.blog-page-paragraphs p:not(.blog-bold-p),
+.blog-forms .forms-your-comment {
+  margin-top: 2rem;
 }
 
 .blog-forms .forms-your-comment {
   border-bottom: none;
-  margin-top: 2rem;
+}
+
+.forms-your-comment-w {
+  width: 90%;
+  height: 8rem;
+  border: none;
 }
 
 .blog-forms input[type="text"] {
   text-decoration: none;
-  border: none;
-  border-bottom: 1px solid #ccc;
   width: 30%;
   padding-bottom: 1rem;
 }
 
 .blog-forms input[type="email"] {
   background-color: white;
-  border-bottom: 1px solid #ccc;
   width: 30%;
   padding-bottom: 1rem;
 }
@@ -1103,12 +1136,8 @@ input {
   margin-right: 1.9rem;
 }
 
-.blog-button-overline {
-  border-top: 1px solid #ccc;
-}
-
 .blog-button-overline .blog-button {
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 3.2rem;
   font-size: 1rem;
   font-weight: 600;
   color: white;
@@ -1117,11 +1146,21 @@ input {
   border-radius: 0.1rem;
   margin-top: 5rem;
   margin-bottom: 3rem;
+}
+
+.blog-forms input[type="text"],
+.blog-button-overline .blog-button {
   border: none;
 }
 
 .blog-button:focus {
-  border: 1px dotted #800080;
+  border: 1px solid #800080;
+}
+
+.blog-forms h2,
+.blog-forms input[type="text"],
+.blog-forms input[type="email"] {
+  border-bottom: 1px solid #ccc;
 }
 
 .contact-image-main {
@@ -1230,4 +1269,33 @@ input {
 
 .contact-button button:focus {
   border: 1px dotted #800080;
+}
+
+.forms-your-comment {
+  text-decoration: none;
+  border: none;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 6rem;
+  background-color: #ededed;
+}
+
+.contact-forms input[type="email"] {
+  background-color: #ededed;
+  border-bottom: 1px solid #ccc;
+  width: 30%;
+  padding-bottom: 1rem;
+}
+
+.contact-forms input[type="text"] {
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 30%;
+  padding-bottom: 1rem;
+}
+
+.contact-forms {
+  border-bottom: none;
+  margin-top: 2rem;
 }
