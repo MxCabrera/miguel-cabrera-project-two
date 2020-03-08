@@ -1,7 +1,13 @@
+// contact styles 
+
+
+// contact detail styles
+
 .wrapper-contact {
-    max-width: 1800px;
+    max-width: $largest-size;
     margin: 0 auto;
     width: 60%;
+
     > h2 {
         font-size: 3.5rem;
         padding-top: 10rem;
@@ -28,6 +34,7 @@
 .contact-options {
     width: 32%;
     padding: 3.3rem 2rem 3.3rem 3.3rem;
+
     i {
         font-size: 3rem;
     }
@@ -46,17 +53,11 @@
     }
 }
 
-.contact-image-main {
-    height: 70vh;
-    background-image: url(../sunshine-assets/contact-2.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 1800px;
-    margin: 0 auto;
-}
+
+// aside info styles 
 
 .contact-touch { 
+
     h2 {
     font-size: 3.5rem;
     font-family: 'Playfair Display', serif;
@@ -64,15 +65,19 @@
     p {
         font-family: 'Poppins', sans-serif;
         color: $color-two;
-        margin-bottom: 7rem;
+        margin-bottom: 6rem;
         border-bottom: none;
         margin-top: 2rem;
     }
 }
 
+
+// forms styles 
+
 .contact-forms {
     border-bottom: none;
     margin-top: 2rem;
+
     input[type="email"] {
         background-color: $color-three;
     }
@@ -104,9 +109,13 @@
     }
 }
 
+
+// button styles 
+
 .contact-button {
     margin-bottom: 5rem;
     border-top: 1px solid $color-four;
+
     button {
         font-size: 1.2rem;
         font-family: 'Poppins', sans-serif;
@@ -124,3 +133,18 @@
 .contact-button button:focus {
     border: 1px dotted $color-eight;
 }
+
+
+// image styles 
+
+.contact-image-main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: $largest-size;
+    height: 70vh;
+    background-image: url(../sunshine-assets/contact-2.jpeg);
+    margin: 0 auto;
+}
+
+// contact styles end 

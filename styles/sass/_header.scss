@@ -1,3 +1,5 @@
+// global styles 
+
 * {
     transition: all 0.25s linear;
 }
@@ -11,6 +13,8 @@ html {
     font-size: 62.5%;
 }
 
+// header styles 
+
 header {
     background-color: $color-three;
     .fixed {
@@ -19,11 +23,13 @@ header {
         position: fixed;
         z-index: 1000;
     }
+
     .wrapper-header {
         max-width: 1600px;
         width: 60%;
         background-color: $color-nine;
         margin: 0 auto;
+
         .header-container {
             align-content: flex-end;
             padding: 2rem 0;
@@ -33,16 +39,21 @@ header {
     }
 }
 
+// navigation styles 
+
 nav{
     width: 100% ;
+
     .flex-header { 
         li a {
         text-transform: uppercase;
         font-weight: 600;
         }
+
         .flex-header li:focus a {
             color: $color-eight;
         }
+
         .flex-header li:hover a {
             color: $color-two;
         }
@@ -54,6 +65,7 @@ nav{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
+
     li a {
         text-decoration: none;
         list-style: none;
@@ -71,12 +83,15 @@ nav{
     text-align: center;
     padding-left: 3rem;
     flex: 2.5 0 40%;
+
     h1 {
         font-size: 5rem;
         font-family: 'Playfair Display', serif;
         font-weight: 700;
     }
 }
+
+// icon styles 
 
 .header-icons {
     font-size: 1.2rem;
@@ -104,6 +119,8 @@ nav{
     position: relative;
 }
 
+// image styles 
+
 .header-image {
     height: 100vh;
     background-image: url(../sunshine-assets/home-1.jpeg);
@@ -122,10 +139,10 @@ nav{
 .header-image,
 .header-image-blog,
 .header-image-contact {
-    max-width: 1800px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    max-width: $largest-size;
 }
 
 .wrapper-footer,
@@ -134,3 +151,5 @@ nav{
 .header-image-contact {
     margin: 0 auto;
 }
+
+// end of header 

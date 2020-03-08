@@ -1,6 +1,10 @@
+// main styles 
+
 main {
     background-color: $color-three;
 }
+
+// section 1 styles 
 
 .wrapper-main {
     width: 54%;
@@ -38,6 +42,8 @@ main {
     }
 }
 
+// section 1 info 
+
 .home-section-1-info {
     flex: 1 0 43%;
     margin-left: 2.6rem;
@@ -65,6 +71,10 @@ main {
     display:block;
     padding-bottom: 2.5rem;
 }
+
+
+// section 2 styles 
+
 
 .home-section-2-flex {
     display: flex;
@@ -122,9 +132,13 @@ main {
     background-size: cover;
 }
 
+
+// section 3 styles 
+
+
 .pattern-bg {
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1600px;
     background-image: url(../sunshine-assets/pattern.png);
     .wrapper-main-section-3 {
         max-width: 1600px;
@@ -215,6 +229,8 @@ main {
     box-shadow: 0.5rem 0.5rem 1rem $color-one;
 }
 
+// gallery section styles 
+
 .home-gallery-images {
     margin-top: 4rem;
     padding-bottom: 17rem;
@@ -223,28 +239,35 @@ main {
         width: calc((100% / 3) - 8px);
         margin-right: 0.6rem;
     }
+    img:hover {
+        box-shadow: 1px 1px 15px $color-one;
+        transform: scale(2);
+    }
 }
 
-.main-image-2 {
-    background-image: url(../sunshine-assets/home-10.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 64rem;
-    flex: 1 1 57%;
-}
+
+
+// section 4 styles 
 
 .home-section-4 {
-    max-width: 1800px;
+    max-width: 1600px;
     margin: 0 auto;
     background-color: $color-nine;
+    
     .main-image-2 {
         background-size: cover;
+        background-image: url(../sunshine-assets/home-10.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 64rem;
+        flex: 1 1 57%;
     }
     .home-section-4-info {
         display: flex;
         flex-direction: column;
         margin: 10rem;
         flex: 1 1 30%;
+
         h4,
         span {
             color: $color-two;
@@ -283,8 +306,11 @@ main {
     }
 }
 
+
 .home-section-4-info .section-4-email  {
     font-weight: 700;
     font-family: 'Playfair Display', serif;
     color: $color-one;
 }
+
+// home styles end 

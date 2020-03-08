@@ -368,10 +368,10 @@ nav .flex-header .flex-header li:hover a {
 .header-image,
 .header-image-blog,
 .header-image-contact {
-  max-width: 1800px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 1600px;
 }
 
 .wrapper-footer,
@@ -420,23 +420,23 @@ footer {
   margin: 0.5rem 0;
 }
 
-.footer-flex .form-footer p {
-  color: #999999;
-  margin-bottom: 1.7rem;
-}
-
-.form-footer {
+.footer-flex .form-footer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 38.5%;
           flex: 1 0 38.5%;
   border-bottom: 1px solid #EDEDED;
 }
 
-.form-footer i {
+.footer-flex .form-footer p {
+  color: #999999;
+  margin-bottom: 1.7rem;
+}
+
+.footer-flex .form-footer i {
   color: #fff;
 }
 
-input[type="email"] {
+.footer-flex .form-footer input[type="email"] {
   border: none;
   color: #999999;
   font-size: 1.2rem;
@@ -651,7 +651,7 @@ main {
 
 .pattern-bg {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1600px;
   background-image: url(../sunshine-assets/pattern.png);
 }
 
@@ -766,7 +766,21 @@ main {
   margin-right: 0.6rem;
 }
 
-.main-image-2 {
+.home-gallery-images img:hover {
+  -webkit-box-shadow: 1px 1px 15px #000000;
+          box-shadow: 1px 1px 15px #000000;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.home-section-4 {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.home-section-4 .main-image-2 {
+  background-size: cover;
   background-image: url(../sunshine-assets/home-10.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -774,16 +788,6 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 57%;
           flex: 1 1 57%;
-}
-
-.home-section-4 {
-  max-width: 1800px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
-.home-section-4 .main-image-2 {
-  background-size: cover;
 }
 
 .home-section-4 .home-section-4-info {
@@ -850,7 +854,7 @@ main {
 }
 
 .wrapper-blog {
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -1136,21 +1140,21 @@ main {
 
 .blog-forms form input[type="text"] {
   text-decoration: none;
-  border: none;
 }
 
 .blog-forms form input[type="email"],
 .blog-forms form input[type="text"] {
   width: 30%;
   padding-bottom: 1rem;
+  border: none;
   border-bottom: 1px solid #CCCCCC;
 }
 
 .blog-forms form .forms-your-comment-w {
+  height: 8rem;
+  width: 90%;
   margin-top: 2rem;
   border-bottom: none;
-  width: 90%;
-  height: 8rem;
   border: none;
 }
 
@@ -1179,7 +1183,7 @@ main {
 }
 
 .wrapper-contact {
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
   width: 60%;
 }
@@ -1232,16 +1236,6 @@ main {
   margin-top: 0.6rem;
 }
 
-.contact-image-main {
-  height: 70vh;
-  background-image: url(../sunshine-assets/contact-2.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  max-width: 1800px;
-  margin: 0 auto;
-}
-
 .contact-touch h2 {
   font-size: 3.5rem;
   font-family: 'Playfair Display', serif;
@@ -1250,7 +1244,7 @@ main {
 .contact-touch p {
   font-family: 'Poppins', sans-serif;
   color: #999999;
-  margin-bottom: 7rem;
+  margin-bottom: 6rem;
   border-bottom: none;
   margin-top: 2rem;
 }
@@ -1315,4 +1309,65 @@ main {
 
 .contact-button button:focus {
   border: 1px dotted #800080;
+}
+
+.contact-image-main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  height: 70vh;
+  background-image: url(../sunshine-assets/contact-2.jpeg);
+  margin: 0 auto;
+}
+
+@media (max-width: 1082px) {
+  * {
+    color: red;
+  }
+  header .wrapper-header {
+    width: 70%;
+  }
+  .wrapper-main {
+    width: 70%;
+  }
+  .home-section-4 .home-section-4-info {
+    margin: 9rem;
+  }
+  .wrapper-footer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 938px) {
+  * {
+    color: green;
+  }
+  header .wrapper-header {
+    width: 80%;
+  }
+  .wrapper-main {
+    width: 75%;
+  }
+  .wrapper-main h4 {
+    padding: 14rem 0 8rem 0;
+  }
+  .home-section-2-container .home-section-2-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12rem 3rem 7rem 3rem;
+  }
+  .home-section-2-container .home-section-2-info .home-main-amenities {
+    width: 40%;
+  }
+  .pattern-bg .wrapper-main-section-3 {
+    width: 75%;
+  }
+  .home-section-4 .home-section-4-info {
+    margin: 7rem;
+  }
+  .wrapper-footer {
+    width: 80%;
+  }
 }

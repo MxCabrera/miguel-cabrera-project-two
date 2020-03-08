@@ -1,5 +1,7 @@
+// blog styles 
+
 .wrapper-blog { 
-    max-width: 1800px;
+    max-width: $largest-size;
     margin: 0 auto;
     .blog-page-absolute {
         margin: 0 auto;
@@ -31,6 +33,8 @@
         text-decoration: none;
     }
 }
+
+// profile picture section styles
 
 .alex-profile-pic {
     width: 50%;
@@ -72,6 +76,8 @@
     }
 }
 
+// next section styles 
+
 .blog-page-paragraphs {    
     margin-top: 3rem;
     border-top: 1px solid $color-four;
@@ -110,6 +116,9 @@
     color: $color-four;
     margin-top: 2rem;
 }
+
+
+// aside styles - related posts
 
 .related-post-container h3 {
     font-weight: 700;
@@ -161,6 +170,8 @@
         margin-top: 2rem;
     }
 }
+
+// next section styles - comments boxes
 
 .comment {
     margin-top: 8rem;
@@ -230,6 +241,9 @@
     }
 }
 
+
+// aside styles - blog forms 
+
 .blog-forms h2 {
     margin-top: 8rem;
     padding-bottom: 2rem;
@@ -246,22 +260,25 @@
     }
     input[type="text"] {
         text-decoration: none;
-        border: none;
     }
     input[type="email"],
     input[type="text"]{
         width: 30%;
         padding-bottom: 1rem;
+        border: none;
         border-bottom: 1px solid $color-four;
-        }
+    }
     .forms-your-comment-w {
+        height: 8rem;
+        width: 90%;
         margin-top: 2rem;
         border-bottom: none;
-        width: 90%;
-        height: 8rem;
         border: none;
     }
 }
+
+
+// button styles 
 
 .blog-button-overline {
     border-top: 1px solid $color-four;
@@ -283,3 +300,5 @@
         color: $color-one;
     }
 }
+
+// blog styles end 

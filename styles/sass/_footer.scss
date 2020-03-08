@@ -1,3 +1,5 @@
+// footer styles
+
 footer {
     font-family: 'Poppins', sans-serif;
     background-color: $color-one;
@@ -8,14 +10,19 @@ footer {
     width: 60%;
 }
 
+
+// navigation list 
+
 .footer-flex {
     padding-top: 4.5rem;
     padding-bottom: 4.8rem;
+
     li:focus a {
         color: $color-eight;
     }
     .footer-pages {
         flex: 1 0 29%;
+
         li a {
             text-transform: capitalize;
             color: $color-two;
@@ -29,29 +36,26 @@ footer {
         }
     }
     .form-footer {
+        flex: 1 0 38.5%;
+        border-bottom: 1px solid $color-three;
         p {
             color: $color-two;
             margin-bottom: 1.7rem;
         }
+        i {
+            color: $color-nine;
+        }
+        input[type="email"] {
+            border: none;
+            color: $color-two;
+            font-size: 1.2rem;
+            padding: 0.5rem 0;
+            background-color: $color-one;
+        }
     }
 }
 
-.form-footer {
-    flex: 1 0 38.5%;
-    border-bottom: 1px solid $color-three;
-}
-
-.form-footer i {
-    color: $color-nine;
-}
-
-input[type="email"] {
-    border: none;
-    color: $color-two;
-    font-size: 1.2rem;
-    padding: 0.5rem 0;
-    background-color: $color-one;
-}
+// copyright styles
 
 .copyright {
     color: $color-two;
@@ -77,3 +81,5 @@ input[type="email"] {
 .footer-line {
     border-top: 1px solid $color-two;
 }
+
+// footer styles end 
