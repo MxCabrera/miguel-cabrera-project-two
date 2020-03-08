@@ -10,7 +10,7 @@ footer {
 
 .footer-flex {
     padding-top: 4.5rem;
-    padding-bottom: 2.8rem;
+    padding-bottom: 4.8rem;
     li:focus a {
         color: $color-eight;
     }
@@ -19,6 +19,7 @@ footer {
         li a {
             text-transform: capitalize;
             color: $color-two;
+            font-size: 1.1rem;
         }
         li:hover a {
             color: $color-three;
@@ -30,6 +31,7 @@ footer {
     .form-footer {
         p {
             color: $color-two;
+            margin-bottom: 1.7rem;
         }
     }
 }

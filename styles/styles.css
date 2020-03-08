@@ -393,7 +393,7 @@ footer {
 
 .footer-flex {
   padding-top: 4.5rem;
-  padding-bottom: 2.8rem;
+  padding-bottom: 4.8rem;
 }
 
 .footer-flex li:focus a {
@@ -409,6 +409,7 @@ footer {
 .footer-flex .footer-pages li a {
   text-transform: capitalize;
   color: #999999;
+  font-size: 1.1rem;
 }
 
 .footer-flex .footer-pages li:hover a {
@@ -421,6 +422,7 @@ footer {
 
 .footer-flex .form-footer p {
   color: #999999;
+  margin-bottom: 1.7rem;
 }
 
 .form-footer {
@@ -713,6 +715,8 @@ main {
 }
 
 .testimonial .home-chevron-right {
+  position: absolute;
+  bottom: 25rem;
   right: -8rem;
 }
 
