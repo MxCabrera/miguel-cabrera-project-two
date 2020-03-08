@@ -15,7 +15,6 @@ html {
     font-size: 62.5%;
 }
 
-
 .wrapper-header,
 .wrapper-footer {
     max-width: 1600px;
@@ -32,7 +31,7 @@ html {
     background-color: $color-nine;
 }
 
-.home-header-container {
+.header-container {
     align-content: flex-end;
     padding: 2rem 0;
 }
@@ -47,7 +46,7 @@ nav,
     flex-wrap: wrap;
 }
 
-.home-header-container,
+.header-container,
 .flex {
     display: flex;
     justify-content: space-between;
@@ -78,7 +77,7 @@ nav,
 }
 
 
-.home-logo {
+.header-logo {
     text-align: center;
     padding-left: 3rem;
     flex: 2.5 0 40%;
@@ -89,8 +88,9 @@ nav,
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
+
 .flex li a,
-.home-header-icons {
+.header-icons {
     font-size: 1.2rem;
 }
 

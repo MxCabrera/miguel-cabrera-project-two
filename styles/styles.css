@@ -255,7 +255,7 @@ html {
   background-color: #fff;
 }
 
-.home-header-container {
+.header-container {
   -ms-flex-line-pack: end;
       align-content: flex-end;
   padding: 2rem 0;
@@ -274,7 +274,7 @@ nav,
       flex-wrap: wrap;
 }
 
-.home-header-container,
+.header-container,
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,7 +310,7 @@ nav,
   min-width: 6.2rem;
 }
 
-.home-logo {
+.header-logo {
   text-align: center;
   padding-left: 3rem;
   -webkit-box-flex: 2.5;
@@ -325,7 +325,7 @@ nav,
 }
 
 .flex li a,
-.home-header-icons {
+.header-icons {
   font-size: 1.2rem;
 }
 
@@ -710,7 +710,6 @@ main {
           flex: 0 0 18%;
 }
 
-/* next section  */
 .pattern-bg {
   background-image: url(../sunshine-assets/pattern.png);
 }
@@ -768,15 +767,15 @@ main {
 }
 
 .home-chevron-right i,
-.home-chevron-left i {
-  font-size: 3.3rem;
-}
-
-.home-chevron-right i,
 .home-chevron-left i,
 .testimonial .adam-levine span,
 .home-section-4-info .section-4-email {
   color: #000000;
+}
+
+.home-chevron-right i,
+.home-chevron-left i {
+  font-size: 3.3rem;
 }
 
 .home-chevron-right {
@@ -849,6 +848,11 @@ main {
   font-size: 2rem;
 }
 
+.home-main-amenities i,
+.home-section-4-info .home-phone-number {
+  font-size: 2.8rem;
+}
+
 .home-section-2-flex-column p,
 .home-section-4-info p {
   line-height: 2rem;
@@ -856,11 +860,6 @@ main {
 
 .home-section-4-info p {
   margin: 1.3rem 0 2.4rem 0;
-}
-
-.home-main-amenities i,
-.home-section-4-info .home-phone-number {
-  font-size: 2.8rem;
 }
 
 .wrapper-blog {
