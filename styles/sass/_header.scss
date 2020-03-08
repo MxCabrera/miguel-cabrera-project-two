@@ -119,6 +119,11 @@ nav{
     position: relative;
 }
 
+.hamburger {
+    color: $color-one; 
+    display: none;
+}
+
 // image styles 
 
 .header-image {

@@ -75,7 +75,7 @@ main {
 
 // section 2 styles 
 
-
+.home-section-2-flex-a,
 .home-section-2-flex {
     display: flex;
 }
@@ -101,6 +101,7 @@ main {
     width: 33%;
     margin: 0 3rem 3rem 0;
     padding: 0.5rem;
+    min-width: 185px;
     i {
         flex: 0 0 18%;
         font-size: 2.8rem;
@@ -132,6 +133,9 @@ main {
     background-size: cover;
 }
 
+.main-image-1-a {
+    display: none;
+}
 
 // section 3 styles 
 
@@ -241,7 +245,7 @@ main {
     }
     img:hover {
         box-shadow: 1px 1px 15px $color-one;
-        transform: scale(2);
+        transform: scale(1.6);
     }
 }
 

@@ -65,3 +65,190 @@
         width: 80%;
     }
 }
+
+
+@media (max-width: 865px) {
+    * {
+        color: blue;
+    }
+
+    // header styles 
+
+    header{
+        .wrapper-header {
+            width: 90%;
+        }
+    } 
+
+    // main styles 
+
+    .wrapper-main {
+    width: 85%;
+        h4 {
+            padding: 12rem 0 6rem 0;
+        }
+        .home-main-flex {
+            margin-bottom: 17rem;
+            .resort-logo {
+                left: -5.5rem;
+            }
+        }
+    }
+
+    // section 2
+
+    .home-main-amenities:nth-child(2n) {
+        margin: 0 0 3rem 0;
+    }
+
+
+    // section 3
+
+    .pattern-bg .wrapper-main-section-3 {
+        width: 85%;
+    }
+
+    .testimonial {
+        .home-chevron-right {
+            right: -5rem;
+        }
+        .home-chevron-left {
+            left: -5rem;
+        }
+    }
+
+    // footer styles 
+
+    .wrapper-footer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .home-section-2-container {   
+        .home-section-2-info {
+            padding: 9rem 3rem 6rem 3rem;
+        }
+    }
+    .home-section-2-flex-a {
+        display: block;
+    }
+    .main-image-1 {
+        display: none;
+    }
+    .main-image-1-ipad {
+        display: block;
+        height: 50rem;
+        background-position: bottom;
+        background-image: url(../sunshine-assets/home-3.jpeg);
+        background-size: cover;
+    }
+    
+    .pattern-bg .wrapper-main-section-3 {
+        .home-section-3-title {
+            padding: 3rem 0 5rem 0;
+        }
+    }
+    .home-gallery-images {
+        padding-bottom: 14rem;
+    }
+
+    .home-section-4 {
+        .home-section-4-info {
+            text-align: center;
+            h3 {
+                margin-bottom: 1rem;
+            }
+            h2 {
+                margin-bottom: 4rem;
+            }
+            p {
+                width: 100%;
+                margin: 0.5rem 0 0.5rem 0;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    header{
+        .wrapper-header {
+            width: 95%;
+        }
+    }
+
+    .wrapper-main {
+        .home-main-flex {
+            .girl-smiling {
+                flex: 1 0 44%;
+            }
+            .resort-logo {
+                left: -3.5rem;
+            }
+        }
+    }
+    .home-section-2-container {
+        .home-section-2-info {
+            .home-main-amenities {
+                width: 46%;
+            }
+        }
+    }
+
+    .pattern-bg {
+        .wrapper-main-section-3 {
+            width: 95%;
+            .testimonial .home-chevron-right {
+                right: 2rem;
+            }
+            .testimonial .home-chevron-left {
+                left: 2rem;
+            }
+        }
+    }
+    .wrapper-footer {
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 680px) {
+    * {
+        color: purple;
+    }
+    html {
+        font-size: 58%;
+    }
+        .home-gallery-images {
+        img {
+            width: calc((100% / 2) - 8px);
+        }   
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+    .home-section-4 {
+        .main-image-2 {
+            height: 40rem;
+        }
+    }
+}
+
+@media (max-width: 530px) {
+
+    .first-nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        font-size: 3rem;
+    }
+
+    .wrapper-main {
+        .home-main-flex {
+            flex-direction: column;
+        }
+    }
+}
