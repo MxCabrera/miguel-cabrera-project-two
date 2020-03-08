@@ -78,15 +78,15 @@
         background-color: $color-three;
     }
     input[type="text"]  {
-        text-decoration: none;
         border: none;
+        text-decoration: none;
     }
     input[type="email"],
     input[type="text"] {
-        border-bottom: 1px solid $color-four;
         width: 30%;
         padding-bottom: 1rem;
         margin-right: 2rem;
+        border-bottom: 1px solid $color-four;
     }
     input[type="textarea"] {
         height: 6rem;
@@ -97,8 +97,8 @@
         width: 100%;
         height: 4rem;
         background-color: $color-three;
-        text-decoration: none;
         border: none;
+        text-decoration: none;
     }
     .forms-your-comment:hover {
         color: $color-one;
@@ -107,19 +107,19 @@
 
 
 .contact-button {
-    border-top: 1px solid $color-four;
     margin-bottom: 5rem;
+    border-top: 1px solid $color-four;
     button {
-        font-family: 'Poppins', sans-serif;
-        color: $color-one;
-        border-bottom: 1px solid $color-one;
-        padding: 0.7rem 0;
         font-size: 1.2rem;
-        margin: 4rem 0 3rem 0;
-        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
         font-weight: 700;
-        text-decoration: none;
+        color: $color-one;
+        margin: 4rem 0 3rem 0;
+        padding: 0.7rem 0;
         border: none;
+        border-bottom: 1px solid $color-one;
+        text-transform: uppercase;
+        text-decoration: none;
     }
 }
 

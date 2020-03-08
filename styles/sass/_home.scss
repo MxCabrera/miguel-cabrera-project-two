@@ -4,102 +4,58 @@ main {
 
 .wrapper-main {
     width: 54%;
-}
-
-.wrapper-main,
-.home-section-2-container, 
-.wrapper-main-section-3 {
     max-width: 1600px;
-}
-
-.wrapper-main,
-.home-section-2-container, 
-.wrapper-main-section-3,
-.pattern-bg,
-.home-section-4 {
     margin: 0 auto;
+    h4{
+        padding: 14rem 0 7rem 0;
+        color: $color-two;
+        padding: 18rem 0 9rem 0;
+        letter-spacing: 0.6rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;  
+        font-size: 1.3rem;
+    }
+    .home-main-flex {
+        flex-direction: row;
+        justify-content: center;
+        z-index: 1;
+        margin-bottom: 21rem;
+        position: relative;
+        display: flex;
+        .girl-smiling {
+            flex: 1 0 34%;
+            border: 1.1rem solid $color-nine;
+            margin: 0 3rem;
+        }
+        .resort-logo {
+            width: 25%;
+            bottom: -9rem;
+            left: -7.5rem;
+            position: absolute;
+        }
+    }
 }
 
-.wrapper-main h4{
-    padding: 14rem 0 7rem 0;
-}
-
-.wrapper-main h4,
-.home-section-3-title {
-    padding: 18rem 0 9rem 0;
-    letter-spacing: 0.6rem;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-1-info p,
-.home-section-2-flex-column p,
-.home-chevron-right i:hover,
-.home-chevron-left i:hover,
-.testimonial .adam-levine,
-.home-section-4-info h4,
-.home-section-4-info span {
-    color: $color-two;
-} 
-
-.wrapper-main h4,
-.home-section-3-title,
-.testimonial,
-.gallery {
-    text-align: center;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-2-flex-column h4,
-.home-section-4-info h4 {
-    text-transform: uppercase;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-1-info span,
-.home-section-2-flex-column h4,
-.home-section-4-info h2,
-.home-section-4-info .section-4-email  {
-    font-weight: 700;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-1-info p,
-.home-section-2-flex-column h4,
-.home-section-2-flex-column p,
-.testimonial .adam-levine,
-.home-section-4-info h4,
-.home-section-4-info p  {
-    font-family: 'Poppins', sans-serif;    
-}
-
-.home-main-flex {
-    flex-direction: row;
-    justify-content: center;
-    z-index: 1;
-    margin-bottom: 21rem;
-}
-
-.home-main-flex,
-.testimonial {
-    position: relative;
-}
-
-.home-main-flex,
-.home-section-2-flex,
-.home-section-2-flex-column,
-.home-section-4-info,
-.home-section-2-info {
-    display: flex;
-}
-
-.girl-smiling {
-    flex: 1 0 34%;
-    border: 1.1rem solid $color-nine;
-    margin: 0 3rem;
+.home-section-1-info {
+    flex: 1 0 43%;
+    margin-left: 2.6rem;
+    h2 {
+        font-size: 3.5rem;
+        line-height: 3.8rem;
+        font-family: 'Playfair Display', serif;
+    }
+    p {
+        color: $color-two;
+        font-family: 'Poppins', sans-serif;    
+        line-height: 2.5rem;
+        margin-top: 3rem;
+        font-size: 1.2rem;
+        span {
+            font-weight: 700;
+        }
+    }
 }
 
 .home-section-1-info::before {
@@ -110,212 +66,161 @@ main {
     padding-bottom: 2.5rem;
 }
 
-.home-section-1-info {
-    flex: 1 0 43%;
-    margin-left: 2.6rem;
+.home-section-2-flex {
+    display: flex;
 }
 
-.home-section-1-info h2 {
-    font-size: 3.5rem;
-    line-height: 3.8rem;
-}
-
-.home-section-1-info h2,
-.testimonial h2, 
-.testimonial p,
-.gallery,
-.home-section-4-info h2,
-.home-section-4-info h3,
-.home-section-4-info .section-4-email {
-    font-family: 'Playfair Display', serif;
-}
-
-.home-section-1-info p {
-    line-height: 2.5rem;
-    margin-top: 3rem;
-}
-
-.home-section-1-info p,
-.testimonial .adam-levine,
-.home-section-4-info p {
-    font-size: 1.2rem;
-}
-
-.resort-logo {
-    width: 25%;
-    bottom: -9rem;
-    left: -7.5rem;
-}
-
-.resort-logo,
-.home-chevron-right,
-.home-chevron-left {
-    position: absolute;
-}
-
-.main-image-1 {
-    flex: 1 0 30%;
-    background-image: url(../sunshine-assets/home-3.jpeg);
-}
-
-.home-section-2-container,
-.pattern-bg,
-.home-section-4  {
-    max-width: 1800px;
-}
-
-
-.home-section-2-flex-column {
-    flex: 0 0 77%;
-}
-
-.home-section-2-flex-column,
-.home-section-4-info {
-    flex-direction: column;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-2-flex-column h4 {
-    font-size: 1.3rem;
-} 
-
-.home-section-2-flex-column h4 {
-    letter-spacing: 0.15rem;
-}
-
-.home-section-2-flex-column p {
-    font-size: 1.15rem;
-}
-
-.home-section-2-flex-column p, 
-.home-gallery-images img {
-    margin-top: 1rem;
-}
-
-.home-section-2-info {
-    flex: 1 0 60%;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding: 16rem 5rem 12rem 5rem;
-}
-
-.home-main-amenities {
-    width: 33%;
-    margin: 0 3rem 3rem 0;
-    padding: 0.5rem;
+.home-section-2-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    .home-section-2-info {
+        display: flex;
+        flex: 1 0 60%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 16rem 5rem 12rem 5rem;
+        background-color: $color-nine;
+    }
 }
 
 .home-main-amenities:hover {
     box-shadow: 1px 1px 5px $color-one;
 }
 
-.home-main-amenities i {
-    flex: 0 0 18%;
+.home-main-amenities {
+    width: 33%;
+    margin: 0 3rem 3rem 0;
+    padding: 0.5rem;
+    i {
+        flex: 0 0 18%;
+        font-size: 2.8rem;
+    }
+    .home-section-2-flex-column {
+        display: flex;
+        flex: 0 0 77%;
+        flex-direction: column;
+        p {
+            font-size: 1.15rem;
+            font-family: 'Poppins', sans-serif;    
+            color: $color-two;
+            margin-top: 1rem;
+            line-height: 2rem;
+        }
+        h4 {
+            font-size: 1.3rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+        }
+    }
+}
+
+.main-image-1 {
+    flex: 1 0 30%;
+    background-image: url(../sunshine-assets/home-3.jpeg);
+    background-size: cover;
 }
 
 .pattern-bg {
+    margin: 0 auto;
+    max-width: 1800px;
     background-image: url(../sunshine-assets/pattern.png);
-}
-
-.wrapper-main-section-3,
-.home-section-4-info p {
-    width: 60%;
-}
-
-.wrapper-main-section-3 .home-section-3-title {
-    padding: 5rem 0;
-}
-.home-section-3-box {
-    padding: 6rem 0rem;
+    .wrapper-main-section-3 {
+        max-width: 1600px;
+        margin: 0 auto;
+        width: 60%;
+        .home-section-3-box {
+            padding: 6rem 0rem;
+        }
+        .home-section-3-title {
+            font-family: 'Poppins', sans-serif;  
+            font-size: 1.3rem;
+            font-weight: 700;  
+            color: $color-two;
+            padding: 5rem 0;
+            text-align: center;
+            letter-spacing: 0.6rem;
+            text-transform: uppercase;
+        }
+        .gallery {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 5.5rem;
+        }
+    }
 }
 
 .testimonial {
+    text-align: center;
+    position: relative;
     padding: 5rem;
+    background-color: $color-nine;
     z-index: 1;
+    .adam-levine {
+        color: $color-two;
+        font-family: 'Poppins', sans-serif;  
+        font-size: 1.2rem;
+    } 
+    h2, 
+    p {
+        font-family: 'Playfair Display', serif;
+    }
+    h2 {
+        font-size: 5rem;
+        margin-bottom: 5rem; 
+    }
+    p {
+        width: 83%;
+        line-height: 3rem;
+        margin: auto;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+    .home-chevron-right {
+        right: -8rem;
+    }
+    .home-chevron-left {
+        position: absolute;
+        bottom: 25rem;
+        left: -8rem;
+    }
+    .home-chevron-right i:hover,
+    .home-chevron-left i:hover {
+        color: $color-two;
+    } 
+    .home-chevron-right i,
+    .home-chevron-left i {
+        color: $color-one;
+        font-size: 3.3rem;
+    }
+}
+
+.testimonial .adam-levine span {
+    color: $color-one;
+}
+
+
+.home-section-3-stars {
+    margin: 3.5rem 0;
+    i {
+        color: $color-six;
+        font-size: 1.7rem;
+    }
 }
 
 .testimonial:hover {
     box-shadow: 0.5rem 0.5rem 1rem $color-one;
 }
 
-.testimonial h2 {
-    font-size: 5rem;
-    margin-bottom: 5rem; 
-}
-
-.testimonial p {
-    width: 83%;
-    line-height: 3rem;
-    margin: auto;
-}
-
-.testimonial p,
-.home-section-3-stars i {
-    font-size: 1.7rem;
-}
-
-.testimonial p,
-.home-section-4-info span {
-    font-weight: 400;
-}
-
-.home-section-3-stars {
-    margin: 3.5rem 0;
-}
-
-.home-section-3-stars i {
-    color: $color-six;
-}
-
-.home-chevron-right i,
-.home-chevron-left i,
-.testimonial .adam-levine span,
-.home-section-4-info .section-4-email {
-    color: $color-one;
-}
-
-.home-chevron-right i,
-.home-chevron-left i {
-    font-size: 3.3rem;
-}
-
-.home-chevron-right {
-    right: -8rem;
-}
-
-.home-chevron-left {
-    left: -8rem;
-}
-
-.home-chevron-right,
-.home-chevron-left {
-    bottom: 25rem;
-}
-
-.gallery {
-    font-size: 5.5rem;
-}
-
 .home-gallery-images {
     margin-top: 4rem;
     padding-bottom: 17rem;
-}
-
-.home-gallery-images img {
-    width: calc((100% / 3) - 8px);
-    margin-right: 0.6rem;
-}
-
-.home-section-2-info,
-.testimonial,
-.home-section-4 {
-    background-color: $color-nine;
-}
-
-.main-image-1,
-.main-image-2 {
-    background-size: cover;
+    img {
+        margin-top: 1rem;
+        width: calc((100% / 3) - 8px);
+        margin-right: 0.6rem;
+    }
 }
 
 .main-image-2 {
@@ -326,36 +231,59 @@ main {
     flex: 1 1 57%;
 }
 
-.home-section-4-info {
-    margin: 10rem;
-    flex: 1 1 30%;
+.home-section-4 {
+    max-width: 1800px;
+    margin: 0 auto;
+    background-color: $color-nine;
+    .main-image-2 {
+        background-size: cover;
+    }
+    .home-section-4-info {
+        display: flex;
+        flex-direction: column;
+        margin: 10rem;
+        flex: 1 1 30%;
+        h4,
+        span {
+            color: $color-two;
+        }
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        h4 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.7rem;
+            margin-bottom: 2.4rem;
+        }
+        h4,
+        p  {
+            font-family: 'Poppins', sans-serif;  
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            margin: 1.3rem 0 2.4rem 0;
+            width: 60%;
+        }
+        h2,
+        h3{
+            font-family: 'Playfair Display', serif;
+        }
+        h2 {
+            font-size: 4.5rem;
+            margin-bottom: 10rem;
+        }
+        .home-phone-number {
+            font-size: 2.8rem;
+        }
+    }
 }
 
-.home-section-4-info h4 {
-    font-size: 1rem;
-    letter-spacing: 0.7rem;
-    margin-bottom: 2.4rem;
-}
 
-.home-section-4-info h2 {
-    font-size: 4.5rem;
-    margin-bottom: 10rem;
-}
-
-.home-section-4-info h3{
-    font-size: 2rem;
-}
-
-.home-main-amenities i,
-.home-section-4-info .home-phone-number {
-    font-size: 2.8rem;
-}
-
-.home-section-2-flex-column p,
-.home-section-4-info p {
-    line-height: 2rem;
-}
-
-.home-section-4-info p {
-    margin: 1.3rem 0 2.4rem 0;
+.home-section-4-info .section-4-email  {
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: $color-one;
 }

@@ -481,79 +481,23 @@ main {
 
 .wrapper-main {
   width: 54%;
-}
-
-.wrapper-main,
-.home-section-2-container,
-.wrapper-main-section-3 {
   max-width: 1600px;
-}
-
-.wrapper-main,
-.home-section-2-container,
-.wrapper-main-section-3,
-.pattern-bg,
-.home-section-4 {
   margin: 0 auto;
 }
 
 .wrapper-main h4 {
   padding: 14rem 0 7rem 0;
-}
-
-.wrapper-main h4,
-.home-section-3-title {
+  color: #999999;
   padding: 18rem 0 9rem 0;
   letter-spacing: 0.6rem;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-1-info p,
-.home-section-2-flex-column p,
-.home-chevron-right i:hover,
-.home-chevron-left i:hover,
-.testimonial .adam-levine,
-.home-section-4-info h4,
-.home-section-4-info span {
-  color: #999999;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.testimonial,
-.gallery {
   text-align: center;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-2-flex-column h4,
-.home-section-4-info h4 {
   text-transform: uppercase;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-1-info span,
-.home-section-2-flex-column h4,
-.home-section-4-info h2,
-.home-section-4-info .section-4-email {
   font-weight: 700;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-1-info p,
-.home-section-2-flex-column h4,
-.home-section-2-flex-column p,
-.testimonial .adam-levine,
-.home-section-4-info h4,
-.home-section-4-info p {
   font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
 }
 
-.home-main-flex {
+.wrapper-main .home-main-flex {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -563,24 +507,13 @@ main {
           justify-content: center;
   z-index: 1;
   margin-bottom: 21rem;
-}
-
-.home-main-flex,
-.testimonial {
   position: relative;
-}
-
-.home-main-flex,
-.home-section-2-flex,
-.home-section-2-flex-column,
-.home-section-4-info,
-.home-section-2-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.girl-smiling {
+.wrapper-main .home-main-flex .girl-smiling {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 34%;
           flex: 1 0 34%;
@@ -588,12 +521,11 @@ main {
   margin: 0 3rem;
 }
 
-.home-section-1-info::before {
-  content: '';
-  width: 15%;
-  border-top: 2px solid #999999;
-  display: block;
-  padding-bottom: 2.5rem;
+.wrapper-main .home-main-flex .resort-logo {
+  width: 25%;
+  bottom: -9rem;
+  left: -7.5rem;
+  position: absolute;
 }
 
 .home-section-1-info {
@@ -606,88 +538,44 @@ main {
 .home-section-1-info h2 {
   font-size: 3.5rem;
   line-height: 3.8rem;
-}
-
-.home-section-1-info h2,
-.testimonial h2,
-.testimonial p,
-.gallery,
-.home-section-4-info h2,
-.home-section-4-info h3,
-.home-section-4-info .section-4-email {
   font-family: 'Playfair Display', serif;
 }
 
 .home-section-1-info p {
+  color: #999999;
+  font-family: 'Poppins', sans-serif;
   line-height: 2.5rem;
   margin-top: 3rem;
-}
-
-.home-section-1-info p,
-.testimonial .adam-levine,
-.home-section-4-info p {
   font-size: 1.2rem;
 }
 
-.resort-logo {
-  width: 25%;
-  bottom: -9rem;
-  left: -7.5rem;
+.home-section-1-info p span {
+  font-weight: 700;
 }
 
-.resort-logo,
-.home-chevron-right,
-.home-chevron-left {
-  position: absolute;
+.home-section-1-info::before {
+  content: '';
+  width: 15%;
+  border-top: 2px solid #999999;
+  display: block;
+  padding-bottom: 2.5rem;
 }
 
-.main-image-1 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 30%;
-          flex: 1 0 30%;
-  background-image: url(../sunshine-assets/home-3.jpeg);
+.home-section-2-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.home-section-2-container,
-.pattern-bg,
-.home-section-4 {
-  max-width: 1800px;
+.home-section-2-container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-.home-section-2-flex-column {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 77%;
-          flex: 0 0 77%;
-}
-
-.home-section-2-flex-column,
-.home-section-4-info {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapper-main h4,
-.home-section-3-title,
-.home-section-2-flex-column h4 {
-  font-size: 1.3rem;
-}
-
-.home-section-2-flex-column h4 {
-  letter-spacing: 0.15rem;
-}
-
-.home-section-2-flex-column p {
-  font-size: 1.15rem;
-}
-
-.home-section-2-flex-column p,
-.home-gallery-images img {
-  margin-top: 1rem;
-}
-
-.home-section-2-info {
+.home-section-2-container .home-section-2-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 60%;
           flex: 1 0 60%;
@@ -697,6 +585,12 @@ main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 16rem 5rem 12rem 5rem;
+  background-color: #fff;
+}
+
+.home-main-amenities:hover {
+  -webkit-box-shadow: 1px 1px 5px #000000;
+          box-shadow: 1px 1px 5px #000000;
 }
 
 .home-main-amenities {
@@ -705,42 +599,100 @@ main {
   padding: 0.5rem;
 }
 
-.home-main-amenities:hover {
-  -webkit-box-shadow: 1px 1px 5px #000000;
-          box-shadow: 1px 1px 5px #000000;
-}
-
 .home-main-amenities i {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 18%;
           flex: 0 0 18%;
+  font-size: 2.8rem;
+}
+
+.home-main-amenities .home-section-2-flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 77%;
+          flex: 0 0 77%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-main-amenities .home-section-2-flex-column p {
+  font-size: 1.15rem;
+  font-family: 'Poppins', sans-serif;
+  color: #999999;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.home-main-amenities .home-section-2-flex-column h4 {
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.main-image-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  background-image: url(../sunshine-assets/home-3.jpeg);
+  background-size: cover;
 }
 
 .pattern-bg {
+  margin: 0 auto;
+  max-width: 1800px;
   background-image: url(../sunshine-assets/pattern.png);
 }
 
-.wrapper-main-section-3,
-.home-section-4-info p {
+.pattern-bg .wrapper-main-section-3 {
+  max-width: 1600px;
+  margin: 0 auto;
   width: 60%;
 }
 
-.wrapper-main-section-3 .home-section-3-title {
-  padding: 5rem 0;
-}
-
-.home-section-3-box {
+.pattern-bg .wrapper-main-section-3 .home-section-3-box {
   padding: 6rem 0rem;
 }
 
+.pattern-bg .wrapper-main-section-3 .home-section-3-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #999999;
+  padding: 5rem 0;
+  text-align: center;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+}
+
+.pattern-bg .wrapper-main-section-3 .gallery {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 5.5rem;
+}
+
 .testimonial {
+  text-align: center;
+  position: relative;
   padding: 5rem;
+  background-color: #fff;
   z-index: 1;
 }
 
-.testimonial:hover {
-  -webkit-box-shadow: 0.5rem 0.5rem 1rem #000000;
-          box-shadow: 0.5rem 0.5rem 1rem #000000;
+.testimonial .adam-levine {
+  color: #999999;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+.testimonial h2,
+.testimonial p {
+  font-family: 'Playfair Display', serif;
 }
 
 .testimonial h2 {
@@ -752,16 +704,33 @@ main {
   width: 83%;
   line-height: 3rem;
   margin: auto;
-}
-
-.testimonial p,
-.home-section-3-stars i {
   font-size: 1.7rem;
+  font-weight: 400;
 }
 
-.testimonial p,
-.home-section-4-info span {
-  font-weight: 400;
+.testimonial .home-chevron-right {
+  right: -8rem;
+}
+
+.testimonial .home-chevron-left {
+  position: absolute;
+  bottom: 25rem;
+  left: -8rem;
+}
+
+.testimonial .home-chevron-right i:hover,
+.testimonial .home-chevron-left i:hover {
+  color: #999999;
+}
+
+.testimonial .home-chevron-right i,
+.testimonial .home-chevron-left i {
+  color: #000000;
+  font-size: 3.3rem;
+}
+
+.testimonial .adam-levine span {
+  color: #000000;
 }
 
 .home-section-3-stars {
@@ -770,35 +739,12 @@ main {
 
 .home-section-3-stars i {
   color: #F6AB09;
+  font-size: 1.7rem;
 }
 
-.home-chevron-right i,
-.home-chevron-left i,
-.testimonial .adam-levine span,
-.home-section-4-info .section-4-email {
-  color: #000000;
-}
-
-.home-chevron-right i,
-.home-chevron-left i {
-  font-size: 3.3rem;
-}
-
-.home-chevron-right {
-  right: -8rem;
-}
-
-.home-chevron-left {
-  left: -8rem;
-}
-
-.home-chevron-right,
-.home-chevron-left {
-  bottom: 25rem;
-}
-
-.gallery {
-  font-size: 5.5rem;
+.testimonial:hover {
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem #000000;
+          box-shadow: 0.5rem 0.5rem 1rem #000000;
 }
 
 .home-gallery-images {
@@ -807,19 +753,9 @@ main {
 }
 
 .home-gallery-images img {
+  margin-top: 1rem;
   width: calc((100% / 3) - 8px);
   margin-right: 0.6rem;
-}
-
-.home-section-2-info,
-.testimonial,
-.home-section-4 {
-  background-color: #fff;
-}
-
-.main-image-1,
-.main-image-2 {
-  background-size: cover;
 }
 
 .main-image-2 {
@@ -832,40 +768,77 @@ main {
           flex: 1 1 57%;
 }
 
-.home-section-4-info {
+.home-section-4 {
+  max-width: 1800px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.home-section-4 .main-image-2 {
+  background-size: cover;
+}
+
+.home-section-4 .home-section-4-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 10rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
 }
 
-.home-section-4-info h4 {
+.home-section-4 .home-section-4-info h4,
+.home-section-4 .home-section-4-info span {
+  color: #999999;
+}
+
+.home-section-4 .home-section-4-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.home-section-4 .home-section-4-info h4 {
+  text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.7rem;
   margin-bottom: 2.4rem;
 }
 
-.home-section-4-info h2 {
+.home-section-4 .home-section-4-info h4,
+.home-section-4 .home-section-4-info p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-section-4 .home-section-4-info p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 1.3rem 0 2.4rem 0;
+  width: 60%;
+}
+
+.home-section-4 .home-section-4-info h2,
+.home-section-4 .home-section-4-info h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.home-section-4 .home-section-4-info h2 {
   font-size: 4.5rem;
   margin-bottom: 10rem;
 }
 
-.home-section-4-info h3 {
-  font-size: 2rem;
-}
-
-.home-main-amenities i,
-.home-section-4-info .home-phone-number {
+.home-section-4 .home-section-4-info .home-phone-number {
   font-size: 2.8rem;
 }
 
-.home-section-2-flex-column p,
-.home-section-4-info p {
-  line-height: 2rem;
-}
-
-.home-section-4-info p {
-  margin: 1.3rem 0 2.4rem 0;
+.home-section-4-info .section-4-email {
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
 }
 
 .wrapper-blog {
@@ -1284,16 +1257,16 @@ main {
 }
 
 .contact-forms input[type="text"] {
-  text-decoration: none;
   border: none;
+  text-decoration: none;
 }
 
 .contact-forms input[type="email"],
 .contact-forms input[type="text"] {
-  border-bottom: 1px solid #CCCCCC;
   width: 30%;
   padding-bottom: 1rem;
   margin-right: 2rem;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 .contact-forms input[type="textarea"] {
@@ -1306,8 +1279,8 @@ main {
   width: 100%;
   height: 4rem;
   background-color: #EDEDED;
-  text-decoration: none;
   border: none;
+  text-decoration: none;
 }
 
 .contact-forms .forms-your-comment:hover {
@@ -1315,21 +1288,21 @@ main {
 }
 
 .contact-button {
-  border-top: 1px solid #CCCCCC;
   margin-bottom: 5rem;
+  border-top: 1px solid #CCCCCC;
 }
 
 .contact-button button {
-  font-family: 'Poppins', sans-serif;
-  color: #000000;
-  border-bottom: 1px solid #000000;
-  padding: 0.7rem 0;
   font-size: 1.2rem;
-  margin: 4rem 0 3rem 0;
-  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  text-decoration: none;
+  color: #000000;
+  margin: 4rem 0 3rem 0;
+  padding: 0.7rem 0;
   border: none;
+  border-bottom: 1px solid #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .contact-button button:focus {
