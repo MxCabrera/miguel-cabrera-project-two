@@ -245,11 +245,6 @@ html {
   width: 60%;
 }
 
-.fixed {
-  position: fixed;
-  z-index: 1000;
-}
-
 .wrapper-header,
 .fixed {
   background-color: #fff;
@@ -259,6 +254,12 @@ html {
   -ms-flex-line-pack: end;
       align-content: flex-end;
   padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav,
@@ -272,16 +273,19 @@ nav,
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.header-container,
-.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.flex li a {
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
 }
 
 .flex-header li a {
@@ -291,12 +295,6 @@ nav,
 
 .flex-header li:focus a {
   color: #800080;
-}
-
-.flex li a {
-  text-decoration: none;
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
 }
 
 .flex-header li:hover a {
@@ -318,15 +316,18 @@ nav,
           flex: 2.5 0 40%;
 }
 
-.home-header-h1 {
+.header-logo h1 {
   font-size: 5rem;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
 
-.flex li a,
 .header-icons {
   font-size: 1.2rem;
+}
+
+.header-icons {
+  margin-top: 1.5rem;
 }
 
 .suitcase {
@@ -380,6 +381,11 @@ nav,
 .cart,
 .shopping {
   position: relative;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1000;
 }
 
 footer {
@@ -864,162 +870,155 @@ main {
 
 .wrapper-blog {
   max-width: 1800px;
-}
-
-.wrapper-blog,
-.blog-page-absolute,
-.blog-page-main-info h2,
-.related-post-info {
   margin: 0 auto;
 }
 
-.blog-page-absolute {
+.wrapper-blog .blog-page-absolute {
+  margin: 0 auto;
   width: 65%;
   padding: 7rem 3rem 2rem 3rem;
   top: -8rem;
-}
-
-.blog-page-absolute,
-.text-comment .body {
   position: relative;
+  background-color: #fff;
 }
 
-.blog-button-overline .blog-button,
-.blog-page-main-info h2 {
-  margin-bottom: 3rem;
-}
-
-.blog-page-main-info h2 {
-  font-size: 3rem;
+.wrapper-blog .blog-page-absolute .blog-page-main-info h2 {
   width: 60%;
-}
-
-.blog-page-main-info h2,
-.blog-side-info h4,
-.related-post-container h3,
-.related-post-info .blog-continue,
-.comment h2 {
+  font-size: 2.9rem;
   font-weight: 700;
-}
-
-.blog-page-main-info h2,
-.blog-trip-advisor {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  line-height: 3rem;
   text-align: center;
 }
 
 .blog-trip-advisor {
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
   color: #000000;
-  margin-bottom: 5rem;
+  margin: 2rem 0 5rem 0;
+  text-align: center;
+}
+
+.blog-trip-advisor a {
+  color: #999999;
+  text-decoration: none;
 }
 
 .alex-profile-pic {
   width: 50%;
 }
 
-.alex-profile-pic img,
-.blog-side-info {
-  width: 15%;
-}
-
-.alex-profile-pic div h4 {
-  font-family: 'Playfair Display', serif;
-}
-
 .alex-profile-pic img {
+  width: 15%;
   border-radius: 50%;
   border: 1px solid #fff;
 }
 
-.alex-profile {
+.alex-profile-pic .alex-profile {
   margin-left: 1.5rem;
-}
-
-.alex-profile h4 {
-  margin: 1.5rem 0 1rem 0;
-}
-
-.blog-side-info {
-  margin-top: 1.8rem;
-}
-
-.alex-profile-pic div,
-.blog-page-paragraphs p {
   text-align: left;
 }
 
+.alex-profile-pic .alex-profile h4 {
+  font-family: 'Playfair Display', serif;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.alex-profile-pic .alex-profile p {
+  color: #999999;
+  font-family: 'Poppins', sans-serif;
+}
+
+.alex-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-side-info {
+  width: 15%;
+  margin-top: 1.8rem;
+}
+
+.blog-side-info h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.blog-side-info p {
+  font-family: 'Poppins', sans-serif;
+  color: #999999;
+  margin-top: 1rem;
+}
+
+.blog-page-paragraphs {
+  margin-top: 3rem;
+  border-top: 1px solid #CCCCCC;
+}
+
 .blog-page-paragraphs p {
-  line-height: 2rem;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 1.2rem;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.blog-page-paragraphs .blog-bold-p {
+  margin-top: 3rem;
+}
+
+.blog-page-paragraphs .share-icons {
+  width: 20%;
+  color: #CCCCCC;
+  margin: 5rem 0 7rem 0;
+}
+
+.blog-page-paragraphs .share-icons span {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.blog-page-paragraphs .share-icons i {
+  font-size: 1.4rem;
+  width: 12%;
+  color: #CCCCCC;
+}
+
+.blog-page-paragraphs .share-icons i:hover {
+  color: #A4F1DC;
 }
 
 .blog-page-paragraphs p:not(.blog-bold-p) {
   font-weight: 400;
-}
-
-.share-icons {
-  width: 20%;
-  margin: 5rem 0 7rem 0;
-}
-
-.share-icons i {
-  width: 12%;
-}
-
-.share-icons i:hover,
-.message-box .message-reply {
-  color: #A4F1DC;
-}
-
-.blog-page-main-info p a,
-.message p,
-.alex-profile p,
-.blog-side-info p,
-.date {
-  color: #999999;
-}
-
-.blog-page-paragraphs p:not(.blog-bold-p),
-.share-icons,
-.share-icons i,
-.message-box span {
   color: #CCCCCC;
+  margin-top: 2rem;
 }
 
-.blog-page-absolute,
-.blog-forms input[type="email"] {
-  background-color: #fff;
+.related-post-container h3 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  padding-bottom: 2rem;
 }
 
-.blog-button-overline .blog-button:hover {
-  color: #000000;
-}
-
-.alex-profile-pic div h4,
-.blog-side-info h4,
-.share-icons span {
-  font-size: 1.5rem;
-}
-
-.blog-page-paragraphs,
-.related-post,
-.single-comment,
-.blog-button-overline,
 .blog-container {
   border-top: 1px solid #CCCCCC;
 }
 
-input,
-.share-icons span,
-.related-post {
+.blog-container .related-post {
+  border-top: 1px solid #CCCCCC;
   margin-right: 2rem;
-}
-
-.related-post {
   width: calc 31.33333%;
   margin-top: 4rem;
 }
 
-.related-post:hover {
+.blog-container .related-post img {
+  width: 100%;
+}
+
+.blog-container .related-post:hover {
   -webkit-box-shadow: 1px 1px 15px #000000;
           box-shadow: 1px 1px 15px #000000;
 }
@@ -1028,75 +1027,62 @@ input,
   text-decoration: underline;
 }
 
-.related-post-container h3 {
-  font-size: 2.6rem;
-}
-
-.related-post-info-container,
-.related-post img {
+.related-post-info-container {
   width: 100%;
 }
 
-.related-post-info {
+.related-post-info-container .related-post-info {
+  margin: 0 auto;
   width: 86%;
   padding: 1.4rem 0;
 }
 
-.blog-side-info p,
-.related-post-info p {
+.related-post-info-container .date {
+  color: #999999;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.related-post-info-container p {
+  font-size: 1.6rem;
   margin-top: 1rem;
 }
 
-.related-post-info p {
-  font-size: 1.6rem;
-}
-
-.blog-trip-advisor,
-.alex-profile p,
-.blog-side-info p,
-.blog-page-paragraphs p,
-.date,
-.related-post-info .blog-continue,
-.body .message {
-  font-family: 'Poppins', sans-serif;
-}
-
-.blog-trip-advisor
-.blog-page-paragraphs p,
-.related-post-info .blog-continue {
+.related-post-info-container .blog-continue {
   font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.comment {
+  margin-top: 8rem;
 }
 
 .comment h2 {
-  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.1rem;
   margin-bottom: 1.5rem;
 }
 
-.blog-comments img {
-  width: 6%;
-}
-
-.single-comment {
+.comment .single-comment {
+  border-top: 1px solid #CCCCCC;
   padding-top: 2rem;
 }
 
-.tip {
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  background: transparent;
-  border: 10px solid #f3f3f3;
+.comment .blog-comments img {
+  width: 6%;
 }
 
-.tip-left {
-  top: 10px;
-  left: -25px;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
+.comment .text-comment {
+  width: 90%;
+  margin-top: 2rem;
 }
 
-.text-comment .body {
+.body {
+  position: relative;
   max-width: 800px;
   height: auto;
   margin: 1.25px 0.62rem;
@@ -1105,163 +1091,140 @@ input,
   border: 5px solid #f3f3f3;
 }
 
+.body .blog-arrow {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #f3f3f3;
+}
+
+.body .blog-arrow-l {
+  top: 10px;
+  left: -25px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
 .body .message {
+  font-family: 'Poppins', sans-serif;
   min-height: 30px;
   border-radius: 1.85rem;
   line-height: 1.5;
-}
-
-.message {
   padding: 1rem 1.5rem;
 }
 
-.share-icons i
-.date,
-.message h5 {
+.body .message h5 {
   font-size: 1.2rem;
 }
 
-.date,
-.message p {
-  margin-bottom: 1rem;
-}
-
-.message p {
-  padding-top: 0.7rem;
-}
-
-.message-box .message-reply {
+.body .message .message-reply {
+  color: #A4F1DC;
   text-transform: capitalize;
 }
 
-.blog-forms h2,
-.comment {
-  margin-top: 8rem;
-}
-
-.related-post-container h3,
-.blog-forms h2 {
-  padding-bottom: 2rem;
-}
-
-.blog-forms form {
-  margin-bottom: 7rem;
-}
-
-.blog-page-paragraphs,
-.blog-bold-p,
-.blog-forms form {
-  margin-top: 3rem;
-}
-
-.blog-trip-advisor,
-.blog-page-paragraphs p:not(.blog-bold-p),
-.blog-forms .forms-your-comment,
-.text-comment,
-.related-post-info .blog-continue {
-  margin-top: 2rem;
-}
-
-.blog-forms .forms-your-comment {
-  border-bottom: none;
-}
-
-.forms-your-comment-w {
-  width: 90%;
-  height: 8rem;
-}
-
-.blog-page-main-info p a,
-.blog-forms input[type="text"] {
-  text-decoration: none;
-}
-
-.blog-forms input[type="text"],
-.blog-forms input[type="email"] {
-  width: 30%;
-  padding-bottom: 1rem;
-}
-
-.message p
-.blog-button-overline .blog-button {
+.body .message p {
+  color: #999999;
+  margin-bottom: 1rem;
+  padding-top: 0.7rem;
   font-size: 1rem;
 }
 
+.body .message span {
+  color: #CCCCCC;
+}
+
+.blog-forms h2 {
+  margin-top: 8rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.blog-forms form {
+  margin: 3rem 0 7rem 0;
+}
+
+.blog-forms form input {
+  margin-right: 2rem;
+}
+
+.blog-forms form input[type="email"] {
+  background-color: #fff;
+}
+
+.blog-forms form input[type="text"] {
+  text-decoration: none;
+  border: none;
+}
+
+.blog-forms form input[type="email"],
+.blog-forms form input[type="text"] {
+  width: 30%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.blog-forms form .forms-your-comment-w {
+  margin-top: 2rem;
+  border-bottom: none;
+  width: 90%;
+  height: 8rem;
+  border: none;
+}
+
+.blog-button-overline {
+  border-top: 1px solid #CCCCCC;
+}
+
 .blog-button-overline .blog-button {
+  font-size: 1rem;
   padding: 1.5rem 3.2rem;
   font-weight: 600;
   background-color: #84A016;
   color: #fff;
   text-transform: uppercase;
   border-radius: 0.1rem;
-  margin-top: 5rem;
-}
-
-.forms-your-comment-w,
-.blog-forms input[type="text"],
-.blog-button-overline .blog-button {
+  margin: 5rem 0 3rem 0;
   border: none;
 }
 
-.blog-button:focus {
+.blog-button-overline .blog-button:focus {
   border: 1px solid #800080;
 }
 
-.blog-forms h2,
-.blog-forms input[type="text"],
-.blog-forms input[type="email"] {
-  border-bottom: 1px solid #CCCCCC;
+.blog-button-overline .blog-button:hover {
+  color: #000000;
 }
 
-.contact-image-main {
-  height: 70vh;
-  background-image: url(../sunshine-assets/contact-2.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.contact-image-main,
 .wrapper-contact {
   max-width: 1800px;
   margin: 0 auto;
-}
-
-.wrapper-contact {
   width: 60%;
 }
 
 .wrapper-contact > h2 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   padding-top: 10rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .wrapper-contact > p {
   width: 50%;
   line-height: 2rem;
-}
-
-.wrapper-contact > p,
-.contact-options p,
-.contact-touch p {
   color: #999999;
-}
-
-.wrapper-contact > p,
-.contact-options p {
   font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1.3rem;
 }
 
-.wrapper-contact > p,
-.contact-options p,
-.contact-touch p,
-.contact-button button {
-  font-family: 'Poppins', serif;
-}
-
-.contact-option-container {
+.wrapper-contact .contact-option-container {
   width: 95%;
   margin: 2rem auto;
+}
+
+.contact-options:not(.contact-email) {
+  border-right: 1px solid #CCCCCC;
 }
 
 .contact-options {
@@ -1274,72 +1237,55 @@ input,
 }
 
 .contact-options h4 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
   margin-top: 1.1rem;
 }
 
-.contact-options h4,
-.contact-button button {
-  color: #000000;
-}
-
 .contact-options p {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #999999;
   line-height: 1.5rem;
   margin-top: 0.6rem;
 }
 
-.contact-option-container .contact-options:not(.contact-email) {
-  border-right: 1px solid #CCCCCC;
+.contact-image-main {
+  height: 70vh;
+  background-image: url(../sunshine-assets/contact-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .contact-touch h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .contact-touch p {
+  font-family: 'Poppins', sans-serif;
+  color: #999999;
   margin-bottom: 7rem;
+  border-bottom: none;
+  margin-top: 2rem;
 }
 
-.contact-button {
-  border-top: 1px solid #CCCCCC;
-  margin-bottom: 5rem;
+.contact-forms {
+  border-bottom: none;
+  margin-top: 2rem;
 }
 
-.forms-your-comment {
-  font-size: 1.1rem;
-  width: 100%;
-  height: 6rem;
-}
-
-.forms-your-comment,
 .contact-forms input[type="email"] {
   background-color: #EDEDED;
 }
 
-.contact-button button,
-.forms-your-comment,
 .contact-forms input[type="text"] {
   text-decoration: none;
   border: none;
-}
-
-.contact-button button {
-  border-bottom: 1px solid #000000;
-  padding: 0.7rem 0;
-  font-size: 1.2rem;
-  margin: 4rem 0 3rem 0;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.contact-button button:focus {
-  border: 1px dotted #800080;
-}
-
-.contact-touch p,
-.contact-forms {
-  border-bottom: none;
-  margin-top: 2rem;
 }
 
 .contact-forms input[type="email"],
@@ -1347,4 +1293,45 @@ input,
   border-bottom: 1px solid #CCCCCC;
   width: 30%;
   padding-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.contact-forms input[type="textarea"] {
+  height: 6rem;
+  margin-bottom: 8rem;
+}
+
+.contact-forms .forms-your-comment {
+  font-size: 1.1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #EDEDED;
+  text-decoration: none;
+  border: none;
+}
+
+.contact-forms .forms-your-comment:hover {
+  color: #000000;
+}
+
+.contact-button {
+  border-top: 1px solid #CCCCCC;
+  margin-bottom: 5rem;
+}
+
+.contact-button button {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  padding: 0.7rem 0;
+  font-size: 1.2rem;
+  margin: 4rem 0 3rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+}
+
+.contact-button button:focus {
+  border: 1px dotted #800080;
 }

@@ -1,137 +1,128 @@
+.wrapper-contact {
+    max-width: 1800px;
+    margin: 0 auto;
+    width: 60%;
+    > h2 {
+        font-size: 3.5rem;
+        padding-top: 10rem;
+        font-family: 'Playfair Display', serif;
+    }
+    > p {
+        width: 50%;
+        line-height: 2rem;
+        color: $color-two;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 1.3rem;
+    }
+    .contact-option-container {
+        width: 95%;
+        margin: 2rem auto;
+    }
+}
+
+.contact-options:not(.contact-email)  {
+    border-right: 1px solid $color-four;
+}
+
+.contact-options {
+    width: 32%;
+    padding: 3.3rem 2rem 3.3rem 3.3rem;
+    i {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+        font-family: 'Playfair Display', serif;
+        color: $color-one;
+        margin-top: 1.1rem;
+    }
+    p {
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        color: $color-two;
+        line-height: 1.5rem;
+        margin-top: 0.6rem;
+    }
+}
+
+
 .contact-image-main {
     height: 70vh;
     background-image: url(../sunshine-assets/contact-2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.contact-image-main,
-.wrapper-contact {
     max-width: 1800px;
     margin: 0 auto;
 }
 
-.wrapper-contact {
-    width: 60%;
+.contact-touch { 
+    h2 {
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    }
+    p {
+        font-family: 'Poppins', sans-serif;
+        color: $color-two;
+        margin-bottom: 7rem;
+        border-bottom: none;
+        margin-top: 2rem;
+    }
 }
 
-.wrapper-contact > h2 {
-    font-size: 4.5rem;
-    padding-top: 10rem;
+.contact-forms {
+    border-bottom: none;
+    margin-top: 2rem;
+    input[type="email"] {
+        background-color: $color-three;
+    }
+    input[type="text"]  {
+        text-decoration: none;
+        border: none;
+    }
+    input[type="email"],
+    input[type="text"] {
+        border-bottom: 1px solid $color-four;
+        width: 30%;
+        padding-bottom: 1rem;
+        margin-right: 2rem;
+    }
+    input[type="textarea"] {
+        height: 6rem;
+        margin-bottom: 8rem;  
+    }
+    .forms-your-comment {
+        font-size: 1.1rem;
+        width: 100%;
+        height: 4rem;
+        background-color: $color-three;
+        text-decoration: none;
+        border: none;
+    }
+    .forms-your-comment:hover {
+        color: $color-one;
+    }
 }
 
-.wrapper-contact > p {
-    width: 50%;
-    line-height: 2rem;
-}
-
-.wrapper-contact > p,
-.contact-options p,
-.contact-touch p {
-    color: $color-two;
-}
-
-.wrapper-contact > p,
-.contact-options p {
-    font-size: 1rem;
-}
-
-.wrapper-contact > p,
-.contact-options p,
-.contact-touch p,
-.contact-button button {
-    font-family: 'Poppins', serif;
-    
-}
-
-.contact-option-container {
-    width: 95%;
-    margin: 2rem auto;
-}
-
-.contact-options {
-    width: 32%;
-    padding: 3.3rem 2rem 3.3rem 3.3rem;
-}
-
-.contact-options i {
-    font-size: 3rem;
-}
-
-.contact-options h4 {
-    font-size: 1.6rem;
-    margin-top: 1.1rem;
-}
-
-.contact-options h4,
-.contact-button button {
-    color: $color-one;
-}
-
-.contact-options p {
-    line-height: 1.5rem;
-    margin-top: 0.6rem;
-}
-
-.contact-option-container .contact-options:not(.contact-email)  {
-    border-right: 1px solid $color-four;
-
-}
-
-.contact-touch h2 {
-    font-size: 4rem;
-}
-
-.contact-touch p {
-    margin-bottom: 7rem;
-}
 
 .contact-button {
     border-top: 1px solid $color-four;
     margin-bottom: 5rem;
-}
-
-.forms-your-comment {
-    font-size: 1.1rem;
-    width: 100%;
-    height: 6rem;
-}
-
-.forms-your-comment,
-.contact-forms input[type="email"] {
-    background-color: $color-three;
-}
-
-
-.contact-button button,
-.forms-your-comment,
-.contact-forms input[type="text"]  {
-    text-decoration: none;
-    border: none;
-}
-
-.contact-button button {
-    border-bottom: 1px solid $color-one;
-    padding: 0.7rem 0;
-    font-size: 1.2rem;
-    margin: 4rem 0 3rem 0;
-    text-transform: uppercase;
-    font-weight: 700;
+    button {
+        font-family: 'Poppins', sans-serif;
+        color: $color-one;
+        border-bottom: 1px solid $color-one;
+        padding: 0.7rem 0;
+        font-size: 1.2rem;
+        margin: 4rem 0 3rem 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        border: none;
+    }
 }
 
 .contact-button button:focus {
     border: 1px dotted $color-eight;
-}
-
-.contact-touch p,
-.contact-forms {
-    border-bottom: none;
-    margin-top: 2rem;
-}
-.contact-forms input[type="email"],
-.contact-forms input[type="text"] {
-    border-bottom: 1px solid $color-four;
-    width: 30%;
-    padding-bottom: 1rem;
 }
