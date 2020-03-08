@@ -1,45 +1,37 @@
 footer {
     font-family: 'Poppins', sans-serif;
+    background-color: $color-one;
 }
 
-footer,
-input[type="email"] {
-    background-color: $color-one;
+.wrapper-footer {
+    max-width: 1600px;
+    width: 60%;
 }
 
 .footer-flex {
     padding-top: 4.5rem;
     padding-bottom: 2.8rem;
-}
-
-.footer-flex li:focus a {
-    color: $color-eight;
-}
-
-.footer-flex ul li a {
-    text-transform: capitalize;
-}
-
-.footer-flex ul li a,
-.form-footer p,
-.copyright,
-input[type="email"] {
-    color: $color-two;
-}
-.copyright i, 
-.form-footer i,
-.footer-social-media i,
-.footer-flex li:hover a,
-.footer-social-media:focus i {
-    color: $color-three;
-}
-
-.footer-pages {
-    flex: 1 0 29%;
-}
-
-.footer-pages li {
-    margin: 0.5rem 0;
+    li:focus a {
+        color: $color-eight;
+    }
+    .footer-pages {
+        flex: 1 0 29%;
+        li a {
+            text-transform: capitalize;
+            color: $color-two;
+        }
+        li:hover a {
+            color: $color-three;
+        }
+        li {
+            margin: 0.5rem 0;
+        }
+    }
+    .form-footer {
+        p {
+            color: $color-two;
+        }
+    }
 }
 
 .form-footer {
@@ -47,15 +39,25 @@ input[type="email"] {
     border-bottom: 1px solid $color-three;
 }
 
+.form-footer i {
+    color: $color-nine;
+}
+
 input[type="email"] {
     border: none;
+    color: $color-two;
     font-size: 1.2rem;
     padding: 0.5rem 0;
+    background-color: $color-one;
 }
 
 .copyright {
+    color: $color-two;
     flex: 1 0 70%;
-}
+    i {
+        color: $color-three;
+    }
+} 
 
 .footer-social-media {
     padding: 3rem 0 ;
@@ -63,6 +65,11 @@ input[type="email"] {
     flex-direction: row; 
     justify-content: space-between;
     flex: 1 0 0%;
+}
+
+.footer-social-media i,
+.footer-social-media:focus i {
+    color: $color-three;
 }
 
 .footer-line {

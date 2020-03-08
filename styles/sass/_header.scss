@@ -7,35 +7,46 @@
     color: $color-one;
 }
 
-header {
-    background-color: $color-three;
-}
-
 html {
     font-size: 62.5%;
 }
 
-.wrapper-header,
-.wrapper-footer {
-    max-width: 1600px;
-    width: 60%;
+header {
+    background-color: $color-three;
+    .fixed {
+        background-color: $color-nine;
+        width: 100% ;
+        position: fixed;
+        z-index: 1000;
+    }
+    .wrapper-header {
+        max-width: 1600px;
+        width: 60%;
+        background-color: $color-nine;
+        margin: 0 auto;
+        .header-container {
+            align-content: flex-end;
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
 
-.wrapper-header,
-.fixed {
-    background-color: $color-nine;
-}
-
-.header-container {
-    align-content: flex-end;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav,
-.fixed {
+nav{
     width: 100% ;
+    .flex-header { 
+        li a {
+        text-transform: uppercase;
+        font-weight: 600;
+        }
+        .flex-header li:focus a {
+            color: $color-eight;
+        }
+        .flex-header li:hover a {
+            color: $color-two;
+        }
+    }
 }
 
 .flex {
@@ -51,24 +62,10 @@ nav,
     }
 }
 
-.flex-header li a {
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.flex-header li:focus a {
-    color: $color-eight;
-}
-
-.flex-header li:hover a {
-    color: $color-two;
-}
-
 .first-nav {
     flex: 1 0 20%;
     min-width: 6.2rem;
 }
-
 
 .header-logo {
     text-align: center;
@@ -81,17 +78,30 @@ nav,
     }
 }
 
-
 .header-icons {
     font-size: 1.2rem;
-}
-
-.header-icons {
     margin-top: 1.5rem;
 }
 
 .suitcase {
     margin-left: 1.3rem;
+}
+
+.cart {
+    color: $color-five;
+    top: -5px;
+    right: -33px;
+}
+
+.shopping {
+    top: -10px;
+    right: -5px;
+    font-size: 0.9rem;
+}
+
+.cart,
+.shopping {
+    position: relative;
 }
 
 .header-image {
@@ -118,33 +128,9 @@ nav,
     background-position: center;
 }
 
-.wrapper-header,
 .wrapper-footer,
 .header-image,
 .header-image-blog,
 .header-image-contact {
     margin: 0 auto;
-}
-
-
-.cart {
-    color: $color-five;
-    top: -5px;
-    right: -33px;
-}
-
-.shopping {
-    top: -10px;
-    right: -5px;
-    font-size: 0.9rem;
-}
-
-.cart,
-.shopping {
-    position: relative;
-}
-
-.fixed {
-    position: fixed;
-    z-index: 1000;
 }
