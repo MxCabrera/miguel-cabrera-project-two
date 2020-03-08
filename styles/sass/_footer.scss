@@ -13,6 +13,11 @@ footer {
 
 // navigation list 
 
+.footer-page-container {
+    display: flex;
+    flex: 1 0 38.5%;
+}
+
 .footer-flex {
     padding-top: 4.5rem;
     padding-bottom: 4.8rem;
@@ -36,7 +41,7 @@ footer {
         }
     }
     .form-footer {
-        flex: 1 0 38.5%;
+        flex: 1 0 30%;
         border-bottom: 1px solid $color-three;
         p {
             color: $color-two;

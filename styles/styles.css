@@ -396,6 +396,15 @@ footer {
   width: 60%;
 }
 
+.footer-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 38.5%;
+          flex: 1 0 38.5%;
+}
+
 .footer-flex {
   padding-top: 4.5rem;
   padding-bottom: 4.8rem;
@@ -427,8 +436,8 @@ footer {
 
 .footer-flex .form-footer {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 38.5%;
-          flex: 1 0 38.5%;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
   border-bottom: 1px solid #EDEDED;
 }
 
@@ -609,7 +618,7 @@ main {
   width: 33%;
   margin: 0 3rem 3rem 0;
   padding: 0.5rem;
-  min-width: 185px;
+  min-width: 200px;
 }
 
 .home-main-amenities i {
@@ -775,6 +784,7 @@ main {
   margin-top: 1rem;
   width: calc((100% / 3) - 8px);
   margin-right: 0.6rem;
+  min-width: 207px;
 }
 
 .home-gallery-images img:hover {
@@ -1493,6 +1503,9 @@ main {
   html {
     font-size: 58%;
   }
+  .header-image {
+    background-position: right;
+  }
   .home-gallery-images img {
     width: calc((100% / 2) - 8px);
   }
@@ -1506,6 +1519,9 @@ main {
 }
 
 @media (max-width: 530px) {
+  * {
+    color: orange;
+  }
   .first-nav {
     display: none;
   }
@@ -1513,10 +1529,92 @@ main {
     display: block;
     font-size: 3rem;
   }
+  .wrapper-main h4 {
+    padding: 7rem 0 5rem 0;
+  }
   .wrapper-main .home-main-flex {
+    margin-bottom: 7rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .wrapper-main .home-main-flex .home-section-1-info {
+    margin-top: 3rem;
+  }
+  .wrapper-main .home-main-flex .resort-logo {
+    left: -1.5rem;
+    top: -5rem;
+  }
+  .home-gallery-images {
+    padding-bottom: 7rem;
+  }
+  .home-section-4 .home-section-4-info {
+    margin: 5rem;
+  }
+  .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-flex .footer-page-container {
+    width: 90%;
+  }
+  .footer-flex .form-footer {
+    margin-top: 4rem;
+    width: 90%;
+  }
+  .footer-flex .form-footer .flex {
+    width: 100%;
+  }
+}
+
+@media (max-width: 484px) {
+  * {
+    color: pink;
+  }
+  .home-section-1-info h2 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+  .home-section-2-container .home-section-2-info .home-main-amenities {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.2rem;
+  }
+  .home-section-2-container .home-section-2-info .home-main-amenities i {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper-main .home-main-flex .girl-smiling {
+    margin: 0;
+  }
+  .wrapper-main .home-main-flex .resort-logo {
+    left: 2.5rem;
+    top: 2rem;
+  }
+  .home-gallery-images img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .home-gallery-images img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-section-1-info h2 {
+    font-size: 3.9rem;
+    line-height: 3.9rem;
+  }
+  .home-section-2-container .home-section-2-info {
+    padding: 5rem 3rem 5rem 3rem;
+  }
+  .testimonial p {
+    font-size: 1.4rem;
   }
 }

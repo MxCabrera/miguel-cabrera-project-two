@@ -101,7 +101,7 @@ main {
     width: 33%;
     margin: 0 3rem 3rem 0;
     padding: 0.5rem;
-    min-width: 185px;
+    min-width: 200px;
     i {
         flex: 0 0 18%;
         font-size: 2.8rem;
@@ -242,6 +242,7 @@ main {
         margin-top: 1rem;
         width: calc((100% / 3) - 8px);
         margin-right: 0.6rem;
+        min-width: 207px;
     }
     img:hover {
         box-shadow: 1px 1px 15px $color-one;
