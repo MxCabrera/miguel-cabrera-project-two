@@ -27,7 +27,6 @@ main {
 .wrapper-main h4,
 .home-section-3-title {
     padding: 18rem 0 9rem 0;
-    font-size: 1.3rem;
     letter-spacing: 0.6rem;
 }
 
@@ -176,14 +175,18 @@ main {
     flex-direction: column;
 }
 
+.wrapper-main h4,
+.home-section-3-title,
 .home-section-2-flex-column h4 {
     font-size: 1.3rem;
+} 
+
+.home-section-2-flex-column h4 {
     letter-spacing: 0.15rem;
 }
 
 .home-section-2-flex-column p {
     font-size: 1.15rem;
-    line-height: 2rem;
 }
 
 .home-section-2-flex-column p, 
@@ -209,7 +212,6 @@ main {
 }
 
 .home-main-amenities i {
-    font-size: 2.7rem;
     flex: 0 0 18%;
 }
 
@@ -225,7 +227,7 @@ main {
 }
 
 .wrapper-main-section-3 .home-section-3-title {
-    padding: 5rem 0 5rem 0;
+    padding: 5rem 0;
 }
 .home-section-3-box {
     padding: 6rem 0rem;
@@ -283,13 +285,17 @@ main {
 
 .home-chevron-right {
     right: -8rem;
-    bottom: 25rem;
 }
 
 .home-chevron-left {
     left: -8rem;
+}
+
+.home-chevron-right,
+.home-chevron-left {
     bottom: 25rem;
 }
+
 
 // next section 
 
@@ -309,6 +315,7 @@ main {
 
 
 // next section 
+
 
 .home-section-2-info,
 .testimonial,
@@ -350,11 +357,16 @@ main {
     font-size: 2rem;
 }
 
+.home-section-2-flex-column p,
 .home-section-4-info p {
-    margin: 1.3rem 0 2.4rem 0;
     line-height: 2rem;
 }
 
+.home-section-4-info p {
+    margin: 1.3rem 0 2.4rem 0;
+}
+
+.home-main-amenities i,
 .home-section-4-info .home-phone-number {
     font-size: 2.8rem;
 }

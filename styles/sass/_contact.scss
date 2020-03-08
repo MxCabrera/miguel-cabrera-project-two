@@ -84,7 +84,6 @@
 }
 
 .contact-touch p {
-    margin-top: 2rem;
     margin-bottom: 7rem;
 }
 
@@ -125,6 +124,7 @@
     border: 1px dotted $color-eight;
 }
 
+.contact-touch p,
 .contact-forms {
     border-bottom: none;
     margin-top: 2rem;
