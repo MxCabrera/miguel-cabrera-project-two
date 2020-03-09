@@ -1594,6 +1594,9 @@ main {
   .wrapper-blog .blog-page-absolute .blog-page-main-info h2 {
     width: 80%;
   }
+  .wrapper-contact .contact-option-container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 530px) {
@@ -1650,6 +1653,9 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .blog-container .related-post {
+    margin-right: 0;
   }
   .related-post-info-container .related-post-info {
     padding: 3.4rem 0;
@@ -1762,6 +1768,14 @@ main {
   }
   .flex-column .flex .blog-side-info {
     width: 28%;
+  }
+  .blog-trip-advisor {
+    line-height: 1.8rem;
+  }
+  .blog-forms form input[type="email"],
+  .blog-forms form input[type="text"] {
+    width: 100%;
+    margin-top: 3rem;
   }
   .wrapper-contact > h2 {
     padding-top: 4rem;

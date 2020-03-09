@@ -329,6 +329,12 @@
             }
         }
     }
+
+    .wrapper-contact {
+        .contact-option-container {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -396,6 +402,9 @@
     }
     .blog-container {
         flex-direction: column;
+        .related-post {
+            margin-right: 0;
+        }
     }
     .related-post-info-container .related-post-info {
         padding: 3.4rem 0;
@@ -534,7 +543,16 @@
                 width: 28%;
             }
         }
-        
+    }
+    .blog-trip-advisor {
+        line-height: 1.8rem;
+    }
+    .blog-forms form {
+        input[type="email"],
+        input[type="text"] {
+            width: 100%;
+            margin-top: 3rem;
+        }
     }
     // contact styles --------
     .wrapper-contact {
