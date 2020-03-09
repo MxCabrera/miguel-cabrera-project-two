@@ -62,6 +62,15 @@
     display: flex;
 }
 
+.flex-column {
+    .flex {
+        width: 50%;
+        .blog-side-info {
+            width: 30%;
+        }
+    }
+}
+
 .blog-side-info {
     width: 15%;
     margin-top: 1.8rem;
@@ -185,12 +194,15 @@
         border-top: 1px solid $color-four;
         padding-top: 2rem;
     }
-    .blog-comments img {
-        width: 6%;
-    }
-    .text-comment {
-        width: 90%;
-        margin-top: 2rem;
+    .blog-comments {
+        align-items: flex-start;
+        img {
+            width: 6%;
+        }
+        .text-comment {
+            width: 92%;
+            margin-bottom: 1rem;
+        }
     }
 }
 

@@ -1,15 +1,19 @@
+
+// ------- media query 1082px ---------
+
+
 @media (max-width: 1082px) {
     * {
         color: red;
     }
+
+    // header 1082px ----
     header{
         .wrapper-header {
             width: 70%;
         }
     }   
-
-    // home-main 1082px
-
+    // home-main 1082px -----
     .wrapper-main {
         width: 70%;
     }
@@ -19,24 +23,53 @@
     .wrapper-footer {
         width: 70%;
     }
+    // blog styles 
+    .wrapper-blog {
+        .blog-page-absolute {
+            width: 70%;
+        }
+    }
+    .blog-forms form {
+        input[type="email"],
+        input[type="text"] {
+            width: 28%;
+        }
+    }
+    .comment {
+        .blog-comments {
+            img {
+                width: 10%;
+            }
+            .text-comment {
+                width: 88%;
+            }
+        }
+    }
+
+    // contact styles 
+    .header-image-contact {
+        height: 50vh;
+    }
+    .contact-image-main {
+        height: 55vh;
+    }
 }
+
+
+// ------- media queries 938px styles ---------
 
 
 @media (max-width: 938px) {
     * {
         color: green;
     }
-
-    // header 938px 
-
+    // header 938px ----
     header{
         .wrapper-header {
             width: 80%;
         }
     } 
-
-    // home main 938px 
-
+    // home main 938px -----
     .wrapper-main {
     width: 75%;
         h4 {
@@ -58,13 +91,29 @@
     .home-section-4 .home-section-4-info {
         margin: 7rem;
     }
-
-    // footer 938px 
-
+    // footer 938px -----
     .wrapper-footer {
         width: 80%;
     }
+
+        // blog styles 
+    .wrapper-blog {
+        .blog-page-absolute {
+            width: 75%;
+        }
+    }
+
+    // contact styles 
+    .wrapper-contact {
+        width: 70%;
+    }
 }
+
+
+
+
+
+// ------ media queries 865px styles ---------
 
 
 @media (max-width: 865px) {
@@ -72,16 +121,13 @@
         color: blue;
     }
 
-    // header styles 
-
+    // header 865px ----
     header{
         .wrapper-header {
             width: 90%;
         }
     } 
-
-    // main styles 
-
+    // main 865px ----
     .wrapper-main {
     width: 85%;
         h4 {
@@ -94,16 +140,11 @@
             }
         }
     }
-
-    // section 2
-
+    // section 2 865px -
     .home-main-amenities:nth-child(2n) {
         margin: 0 0 3rem 0;
     }
-
-
-    // section 3
-
+    // section 3 865px -
     .pattern-bg .wrapper-main-section-3 {
         width: 85%;
     }
@@ -116,16 +157,42 @@
             left: -5rem;
         }
     }
+    
+    // blog styles ------------
+    .wrapper-blog {
+        .blog-page-absolute {
+            width: 80%;
+        }
+    }
+    .blog-page-paragraphs .share-icons {
+        width: 28%;
+    }
 
-    // footer styles 
-
+    // contact styles ---------
+    .wrapper-contact {
+        width: 80%;
+    }
+    .contact-forms {
+        input[type="email"], 
+        input[type="text"] {
+        width: 27%;
+        }
+    }
+    // footer styles -----------
     .wrapper-footer {
         width: 90%;
     }
 }
 
+
+
+
+// --------media queries 780px styles--------
+
+
 @media (max-width: 780px) {
 
+    // home main 780px -----
     .home-section-2-container {   
         .home-section-2-info {
             padding: 9rem 3rem 6rem 3rem;
@@ -144,7 +211,7 @@
         background-image: url(../sunshine-assets/home-3.jpeg);
         background-size: cover;
     }
-    
+    // next section 780px    
     .pattern-bg .wrapper-main-section-3 {
         .home-section-3-title {
             padding: 3rem 0 5rem 0;
@@ -153,7 +220,7 @@
     .home-gallery-images {
         padding-bottom: 14rem;
     }
-
+    // next section 780px -----
     .home-section-4 {
         .home-section-4-info {
             text-align: center;
@@ -169,7 +236,37 @@
             }
         }
     }
+
+    // blog styles ------------
+    .header-image-blog {
+        height: 50vh;
+    }
+    .wrapper-blog {
+        .blog-page-absolute {
+            width: 85%;
+        }
+    }
+    .flex-column {
+        .alex-profile-pic {
+            width: 40%;
+            img {
+                width: 21%;
+            }
+        }
+        .flex {
+            width: 60%;
+            .blog-side-info {
+                width: 25%;
+            }
+        }
+    }
 }
+
+
+
+
+
+// ------ media query 768px styles --------
 
 
 @media (max-width: 768px) {
@@ -178,7 +275,7 @@
             width: 95%;
         }
     }
-
+    // home main 768px ----
     .wrapper-main {
         .home-main-flex {
             .girl-smiling {
@@ -196,7 +293,7 @@
             }
         }
     }
-
+    // next section 768px ----
     .pattern-bg {
         .wrapper-main-section-3 {
             width: 95%;
@@ -208,11 +305,16 @@
             }
         }
     }
+    // footer 768px ----
     .wrapper-footer {
         width: 95%;
     }
-
 }
+
+
+
+
+// ----- media queries 680px styles -----
 
 @media (max-width: 680px) {
     * {
@@ -221,6 +323,7 @@
     html {
         font-size: 58%;
     }
+    // header 680px ----
     .header-image{
         background-position: right;
     }
@@ -232,17 +335,34 @@
             transform: scale(1.1);
         }
     }
+    // home main 680px -
     .home-section-4 {
         .main-image-2 {
             height: 40rem;
         }
     }
+
+    // blog styles -----------
+    .wrapper-blog {
+        .blog-page-absolute {
+            width: 90%;
+            .blog-page-main-info h2 {
+                width: 80%;
+            }
+        }
+    }
 }
+
+
+
+
+// ----- media queries 530px styles ------
 
 @media (max-width: 530px) {
     * {
         color: orange;
     }
+    // header 530px ----
     .first-nav {
         display: none;
     }
@@ -250,7 +370,8 @@
         display: block;
         font-size: 3rem;
     }
-
+    
+    // home-main 530px ----
     .wrapper-main {
         h4 {
             padding: 7rem 0 5rem 0;
@@ -267,6 +388,7 @@
             }
         }
     }
+    // next section 530px ----
     .home-gallery-images {
         padding-bottom: 7rem;
     }
@@ -275,6 +397,82 @@
             margin: 5rem;
         }
     }
+
+        // blog styles -----------
+    .wrapper-blog {
+        .blog-page-absolute {
+            width: 95%;
+            .blog-page-main-info h2 {
+                width: 90%;
+            }
+        }
+    }
+    .alex-profile-pic {
+        width: 40%;
+        img {
+            width: 25%;
+        }
+        .blog-side-info {
+            width: 19%;
+        }
+    }
+    .blog-page-paragraphs .share-icons {
+        width: 34%;
+    }
+    .blog-container {
+        flex-direction: column;
+    }
+    .related-post-info-container .related-post-info {
+        padding: 3.4rem 0;
+    }
+    .comment {
+        .blog-comments {
+            img {
+                width: 13%;
+            }
+            .text-comment {
+                width: 84%;
+            }
+        }
+    }
+    .blog-forms form {
+        input[type="email"],
+        input[type="text"] {
+            width: 43%;
+            margin-top: 3rem;
+        }
+    }
+
+    // contact styles ------
+    .wrapper-contact {
+        width: 80%;
+        > p {
+            width: 82%;
+        }
+        .contact-option-container {
+        width: 100%;
+            .contact-options {
+                width: 32%;
+                padding: 1rem;
+            }
+        }
+        .contact-touch {
+            margin-top: 3.5rem;
+        }
+        .contact-forms {
+            input[type="email"], 
+            input[type="text"] {
+            width: 43%;
+            margin-top: 3rem;
+            }
+        }
+    }
+    
+    .contact-touch p {
+        margin-bottom: 2rem;
+    }
+
+    // footer 530px -----
     .footer-flex {
         flex-direction: column;
         .footer-page-container {
@@ -289,6 +487,11 @@
         }
     }
 }
+
+
+
+
+// ----- media queries 484px styles -----
 
 @media (max-width: 484px) {
     * {
@@ -310,7 +513,19 @@
             }
         }
     }
+    // blog styles ----
+    .wrapper-blog {
+        .blog-page-absolute {
+            position: static;
+            width: 100%;
+            padding: 6rem 2rem 2rem 2rem;
+        }
+    }
 }
+
+
+
+// ----- media queries 450px styles -----
 
 @media (max-width: 450px) {
     .wrapper-main {
@@ -333,20 +548,123 @@
             transform: none;
         }
     }
+
+    // blog styles ---- 
+
+    .blog-page-paragraphs .share-icons {
+        width: 42%;
+    }
+    .flex-column {
+        flex-direction: column;
+        .alex-profile-pic {
+            width: 100%;
+        }
+        .flex {
+            width: 100%;
+            margin-top: 1rem;
+            .blog-side-info {
+                width: 28%;
+            }
+        }
+        
+    }
+    // contact styles ----
+    
+    .wrapper-contact {
+        > h2 {
+            padding-top: 4rem;
+        }
+        .flex {
+            flex-direction: column;
+        }
+        .contact-forms {
+            input[type="email"], 
+            input[type="text"] {
+            width: 90%;
+            }
+        }
+    }
+    .wrapper-contact {
+        h2,
+        p {
+            text-align: center;
+        }
+        > p {
+            width: 100%;
+        }
+        .contact-option-container {
+            .contact-options {
+                border: none;
+                border-bottom: 1px solid $color-four;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .contact-options:not(.contact-email) {
+        border-right: none;
+    }
+
+    .contact-touch {
+        p {
+            line-height: 2rem;
+        }
+    }
 }
 
+// ----- media queries 360px styles -----
+
 @media (max-width: 360px) {
-    .home-section-1-info h2 {
+    html {
+        font-size: 62.5%;
+    }
+
+    // home styles ----
+    .wrapper-main {
+        width: 95%;
+    }
+    .home-section-1-info {
+        margin-left: 1.5rem;
+        h2 {
         font-size: 3.9rem;
         line-height: 3.9rem;
+        }
     }
     .home-section-2-container {
         .home-section-2-info {
-            padding: 5rem 3rem 5rem 3rem;
+            padding: 3rem 1rem 3rem 1rem;
         }
     }
-
-    .testimonial p {
-        font-size: 1.4rem;
+    .pattern-bg {
+        .wrapper-main-section-3 {
+            .testimonial p {
+                font-size: 1.4rem;
+            }
+            .testimonial .home-chevron-right {
+                top: 6.5rem;
+                right: 5rem;
+            }
+            .testimonial .home-chevron-left {
+                top: 6.5rem;
+                left: 5rem;
+            }
+        }
+    }
+    .testimonial {
+        padding: 5rem 0.4rem;
+    }
+    // blog styles -----
+    .blog-page-paragraphs .share-icons {
+        width: 50%;
+    }
+    // contact styles 
+    .header-image-contact {
+        height: 30vh;
+        background-position: 45%;
+    }
+    .contact-image-main {
+        height: 35vh;
     }
 }
+
+// media queries end 
