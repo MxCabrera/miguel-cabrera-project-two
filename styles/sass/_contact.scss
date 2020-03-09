@@ -1,7 +1,7 @@
-// contact styles 
+// contact styles ----------------
 
 
-// contact detail styles
+// contact detail styles ---------
 
 .wrapper-contact {
     max-width: $largest-size;
@@ -34,7 +34,6 @@
 .contact-options {
     width: 32%;
     padding: 3.3rem 2rem 3.3rem 3.3rem;
-
     i {
         font-size: 3rem;
     }
@@ -54,7 +53,7 @@
 }
 
 
-// aside info styles 
+// aside info styles -------------------
 
 .contact-touch { 
 
@@ -72,7 +71,7 @@
 }
 
 
-// forms styles 
+// forms styles -------------------------
 
 .contact-forms {
     border-bottom: none;
@@ -110,7 +109,7 @@
 }
 
 
-// button styles 
+// button styles ----------------------
 
 .contact-button {
     margin-bottom: 5rem;
@@ -128,6 +127,10 @@
         text-transform: uppercase;
         text-decoration: none;
     }
+    button:hover {
+        color: $color-two;
+        border-top: 1px solid $color-one;
+    }
 }
 
 .contact-button button:focus {
@@ -135,7 +138,7 @@
 }
 
 
-// image styles 
+// image styles ----------------------
 
 .contact-image-main {
     background-repeat: no-repeat;

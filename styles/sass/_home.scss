@@ -1,10 +1,10 @@
-// main styles 
+// main styles ------------------
 
 main {
     background-color: $color-three;
 }
 
-// section 1 styles 
+// section 1 styles -------------
 
 .wrapper-main {
     width: 54%;
@@ -42,7 +42,7 @@ main {
     }
 }
 
-// section 1 info 
+// section 1 info ------------------
 
 .home-section-1-info {
     flex: 1 0 43%;
@@ -73,7 +73,7 @@ main {
 }
 
 
-// section 2 styles 
+// section 2 styles ---------------
 
 .home-section-2-flex-a,
 .home-section-2-flex {
@@ -137,7 +137,7 @@ main {
     display: none;
 }
 
-// section 3 styles 
+// section 3 styles ------------------
 
 
 .pattern-bg {
@@ -233,7 +233,7 @@ main {
     box-shadow: 0.5rem 0.5rem 1rem $color-one;
 }
 
-// gallery section styles 
+// gallery section styles ------------
 
 .home-gallery-images {
     margin-top: 4rem;
@@ -252,7 +252,7 @@ main {
 
 
 
-// section 4 styles 
+// section 4 styles -----------------
 
 .home-section-4 {
     max-width: 1600px;
@@ -311,11 +311,10 @@ main {
     }
 }
 
-
 .home-section-4-info .section-4-email  {
     font-weight: 700;
     font-family: 'Playfair Display', serif;
     color: $color-one;
 }
 
-// home styles end 
+// home styles end ----------------

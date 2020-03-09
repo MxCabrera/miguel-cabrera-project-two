@@ -3,9 +3,6 @@
 
 
 @media (max-width: 1082px) {
-    * {
-        color: red;
-    }
 
     // header 1082px ----
     header{
@@ -23,7 +20,7 @@
     .wrapper-footer {
         width: 70%;
     }
-    // blog styles 
+    // blog styles  --------
     .wrapper-blog {
         .blog-page-absolute {
             width: 70%;
@@ -45,8 +42,7 @@
             }
         }
     }
-
-    // contact styles 
+    // contact styles ------- 
     .header-image-contact {
         height: 50vh;
     }
@@ -60,9 +56,6 @@
 
 
 @media (max-width: 938px) {
-    * {
-        color: green;
-    }
     // header 938px ----
     header{
         .wrapper-header {
@@ -91,25 +84,21 @@
     .home-section-4 .home-section-4-info {
         margin: 7rem;
     }
-    // footer 938px -----
-    .wrapper-footer {
-        width: 80%;
-    }
-
-        // blog styles 
+    // blog styles --------
     .wrapper-blog {
         .blog-page-absolute {
             width: 75%;
         }
     }
-
-    // contact styles 
+    // contact styles -------
     .wrapper-contact {
         width: 70%;
     }
+    // footer 938px 
+    .wrapper-footer {
+        width: 80%;
+    }
 }
-
-
 
 
 
@@ -117,17 +106,13 @@
 
 
 @media (max-width: 865px) {
-    * {
-        color: blue;
-    }
-
     // header 865px ----
     header{
         .wrapper-header {
             width: 90%;
         }
     } 
-    // main 865px ----
+    // home main styles --------
     .wrapper-main {
     width: 85%;
         h4 {
@@ -140,11 +125,11 @@
             }
         }
     }
-    // section 2 865px -
+    // section 2 865px
     .home-main-amenities:nth-child(2n) {
         margin: 0 0 3rem 0;
     }
-    // section 3 865px -
+    // section 3 865px 
     .pattern-bg .wrapper-main-section-3 {
         width: 85%;
     }
@@ -191,8 +176,7 @@
 
 
 @media (max-width: 780px) {
-
-    // home main 780px -----
+    // home main 780px
     .home-section-2-container {   
         .home-section-2-info {
             padding: 9rem 3rem 6rem 3rem;
@@ -220,7 +204,7 @@
     .home-gallery-images {
         padding-bottom: 14rem;
     }
-    // next section 780px -----
+    // next section 780px
     .home-section-4 {
         .home-section-4-info {
             text-align: center;
@@ -236,7 +220,6 @@
             }
         }
     }
-
     // blog styles ------------
     .header-image-blog {
         height: 50vh;
@@ -264,8 +247,6 @@
 
 
 
-
-
 // ------ media query 768px styles --------
 
 
@@ -275,7 +256,7 @@
             width: 95%;
         }
     }
-    // home main 768px ----
+    // home main 768px
     .wrapper-main {
         .home-main-flex {
             .girl-smiling {
@@ -293,7 +274,7 @@
             }
         }
     }
-    // next section 768px ----
+    // next section 768px
     .pattern-bg {
         .wrapper-main-section-3 {
             width: 95%;
@@ -305,7 +286,7 @@
             }
         }
     }
-    // footer 768px ----
+    // footer styles ------
     .wrapper-footer {
         width: 95%;
     }
@@ -317,9 +298,6 @@
 // ----- media queries 680px styles -----
 
 @media (max-width: 680px) {
-    * {
-        color: purple;
-    }
     html {
         font-size: 58%;
     }
@@ -359,10 +337,7 @@
 // ----- media queries 530px styles ------
 
 @media (max-width: 530px) {
-    * {
-        color: orange;
-    }
-    // header 530px ----
+    // header styles -------
     .first-nav {
         display: none;
     }
@@ -371,7 +346,7 @@
         font-size: 3rem;
     }
     
-    // home-main 530px ----
+    // home main styles -----------
     .wrapper-main {
         h4 {
             padding: 7rem 0 5rem 0;
@@ -388,7 +363,7 @@
             }
         }
     }
-    // next section 530px ----
+    // next section 530px
     .home-gallery-images {
         padding-bottom: 7rem;
     }
@@ -442,8 +417,7 @@
             margin-top: 3rem;
         }
     }
-
-    // contact styles ------
+    // contact styles ----------
     .wrapper-contact {
         width: 80%;
         > p {
@@ -467,12 +441,10 @@
             }
         }
     }
-    
     .contact-touch p {
         margin-bottom: 2rem;
     }
-
-    // footer 530px -----
+    // footer styles -----------
     .footer-flex {
         flex-direction: column;
         .footer-page-container {
@@ -494,9 +466,6 @@
 // ----- media queries 484px styles -----
 
 @media (max-width: 484px) {
-    * {
-        color: pink;
-    }
     .home-section-1-info h2 {
         font-size: 4.5rem;
         line-height: 5.5rem;
@@ -510,10 +479,11 @@
             }
             .home-main-amenities i {
                 font-size: 5rem;
+                margin-right: 1rem;
             }
         }
     }
-    // blog styles ----
+    // blog styles ----------
     .wrapper-blog {
         .blog-page-absolute {
             position: static;
@@ -548,9 +518,7 @@
             transform: none;
         }
     }
-
-    // blog styles ---- 
-
+    // blog styles -----------
     .blog-page-paragraphs .share-icons {
         width: 42%;
     }
@@ -568,8 +536,7 @@
         }
         
     }
-    // contact styles ----
-    
+    // contact styles --------
     .wrapper-contact {
         > h2 {
             padding-top: 4rem;
@@ -604,7 +571,6 @@
     .contact-options:not(.contact-email) {
         border-right: none;
     }
-
     .contact-touch {
         p {
             line-height: 2rem;
@@ -618,8 +584,11 @@
     html {
         font-size: 62.5%;
     }
-
-    // home styles ----
+    .header-image {
+        background-position: 75%;
+        height: 70vh;
+    }
+    // home styles ------------
     .wrapper-main {
         width: 95%;
     }
@@ -653,7 +622,7 @@
     .testimonial {
         padding: 5rem 0.4rem;
     }
-    // blog styles -----
+    // blog styles ---------------
     .blog-page-paragraphs .share-icons {
         width: 50%;
     }
@@ -664,6 +633,10 @@
     }
     .contact-image-main {
         height: 35vh;
+    }
+
+    .footer-social-media {
+        flex: 3 0 30%;
     }
 }
 

@@ -1,4 +1,4 @@
-// footer styles
+// footer styles ----------------------
 
 footer {
     font-family: 'Poppins', sans-serif;
@@ -11,7 +11,7 @@ footer {
 }
 
 
-// navigation list 
+// navigation list --------------------
 
 .footer-page-container {
     display: flex;
@@ -60,7 +60,7 @@ footer {
     }
 }
 
-// copyright styles
+// copyright styles -------------------
 
 .copyright {
     color: $color-two;
@@ -80,11 +80,15 @@ footer {
 
 .footer-social-media i,
 .footer-social-media:focus i {
-    color: $color-three;
+color: $color-three;
+}
+
+.footer-social-media i:hover {
+    color: $color-five;
 }
 
 .footer-line {
     border-top: 1px solid $color-two;
 }
 
-// footer styles end 
+// footer styles end ----------------
